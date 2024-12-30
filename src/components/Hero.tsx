@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 
 export const Hero = () => {
     const [offsetY, setOffsetY] = useState(0);
@@ -35,14 +33,6 @@ export const Hero = () => {
     };
 
     useEffect(() => {
-
-        AOS.init({
-            duration: 2500,
-            easing: 'ease-in-out-back',
-            once: true
-        })
-
-
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -56,7 +46,7 @@ export const Hero = () => {
     };
 
     return (
-        <div className="relative w-full min-h-screen overflow-hidden">
+        <div className="relative w-full min-h-screen">
             {slides.map((slide, index) => (
                 <div
                     key={index}
@@ -80,11 +70,9 @@ export const Hero = () => {
                                         className="w-[20rem] lg:w-[70%] rounded-[100%] transition-transform duration-500 hover:scale-105"
                                         src={slide.image}
                                         alt=""
-                                        loading="lazy"
-                                        data-aos="fade-left"
-                                    />
+                                        loading="lazy"                                    />
                                 </div>
-                                <div className="text-center lg:text-left space-y-4 pl-0 md:pl-8 order-2 md:order-1" data-aos="fade-right">
+                                <div className="text-center lg:text-left space-y-4 pl-0 md:pl-8 order-2 md:order-1">
                                     <h1 className="text-white text-4xl lg:text-6xl font-bold cursor-default mt-14 mb-10 px-3">
                                         {slide.title} <span className="text-green-600">{slide.titleHighlight}</span>
                                     </h1>
