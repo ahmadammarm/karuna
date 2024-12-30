@@ -11,21 +11,32 @@ export const Hero = () => {
 
     const slides = [
         {
-            image: "/hero.webp",
+            image: "/aset-home/banner-1.jpeg",
             title: "Selamat datang di",
             titleHighlight: "Program Karuna",
             description: "Optimalisasi Wisata Petik Jambu sebagai Eco-eduwisata Melalui Peningkatan Entrepreneur Skills Berbasis Community-Based Inclusive Development dengan Pemberdayaan Paguyuban Disabilitas",
             buttonText: "Selengkapnya",
-            buttonLink: "/#about"
+            buttonLink: "/about",
+            imageUrl: "/aset-home/banner-1.jpeg",
         },
         {
-            image: "/hero.webp",
+            image: "/aset-home/hero.webp",
             title: "Selamat datang di",
             titleHighlight: "Program Dispreneursive",
             description: "Pemberdayaan entrepreneur skills melalui Optimalisasi Kearifan Lokal Petik Jambu Sebagai Eco-Eduwisata di Paguyuban Disabilitas Desa Gunung Sari, Malang",
             buttonText: "Jelajahi",
-            buttonLink: "/#programs"
-        }
+            buttonLink: "/edugo-pick",
+            imageUrl: "/aset-home/hero.webp",
+        },
+        {
+            image: "/aset-home/hero2.webp",
+            title: "Selamat datang di",
+            titleHighlight: "Program Dispreneursive",
+            description: "Pemberdayaan entrepreneur skills melalui Optimalisasi Kearifan Lokal Petik Jambu Sebagai Eco-Eduwisata di Paguyuban Disabilitas Desa Gunung Sari, Malang",
+            buttonText: "Jelajahi",
+            buttonLink: "/#programs",
+            imageUrl: "/aset-home/hero2.webp"
+        },
     ];
 
     const handleScroll = () => {
@@ -68,15 +79,20 @@ export const Hero = () => {
                                 <div className="flex justify-center lg:justify-end md:mb-0 pr-0 md:pr-10 order-1 md:order-2 mt-20">
                                     <img
                                         className="w-[20rem] lg:w-[70%] rounded-[100%] transition-transform duration-500 hover:scale-105"
-                                        src={slide.image}
+                                        src={slide.imageUrl}
                                         alt=""
                                         loading="lazy"                                    />
                                 </div>
                                 <div className="text-center lg:text-left space-y-4 pl-0 md:pl-8 order-2 md:order-1">
-                                    <h1 className="text-white text-4xl lg:text-6xl font-bold cursor-default mt-14 mb-10 px-3">
-                                        {slide.title} <span className="text-green-600">{slide.titleHighlight}</span>
+                                    <h1 
+                                    className="text-white text-4xl lg:text-6xl font-bold cursor-default mt-14 mb-10 px-3 font-sans"
+                                    style={{
+                                        fontFamily: "serif"
+                                    }}
+                                    >
+                                        {slide.title} <span className="text-green-600 font-sans" style={{ fontFamily: "serif" }}>{slide.titleHighlight}</span>
                                     </h1>
-                                    <p className="text-white text-lg lg:text-xl leading-relaxed font-medium cursor-default px-3">
+                                    <p className="text-white text-lg lg:text-xl leading-relaxed font-medium cursor-default px-3 font-sans">
                                         {slide.description}
                                     </p>
                                     <Link href={slide.buttonLink} className="px-3">

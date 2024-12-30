@@ -1,6 +1,7 @@
 "use client"
 
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import { Faq } from "@/components/Faq";
 import { Hero } from "@/components/Hero";
 import Loading from "@/components/Loading";
@@ -29,6 +30,7 @@ export default function Home() {
             <Hero />
             <About />
             <Faq />
+            <Contact />
         </div>
     );
 }

@@ -59,7 +59,7 @@ const Navbar = () => {
                   pathname === '/about'
                     ? 'bg-green-200 text-green-900'
                     : 'text-green-700 hover:bg-green-200 hover:text-green-900'
-                } px-3 py-2 rounded-md text-sm`}
+                } px-3 py-2 rounded-md text-sm font-medium`}
               >
                 About
               </Link>

@@ -91,7 +91,7 @@ const About = () => {
                         data-aos="fade-left"
                         data-aos-duration="1000"
                     >
-                        <h3 className="text-2xl md:text-3xl font-semibold text-green-700">
+                        <h3 className="text-2xl md:text-3xl font-bold text-green-700">
                             Selamat Datang di Program Karuna!
                         </h3>
                         <p className="text-gray-600 text-lg leading-relaxed">
@@ -108,7 +108,7 @@ const About = () => {
                             data-aos-delay="100"
                         >
                             <Image src="/aset-home/2.png" alt="masyarakat" width={100} height={20} />
-                            <span className="text-green-700 font-semibold text-xl">Pemberdayaan Masyarakat</span>
+                            <span className="text-green-700 font-bold text-xl">Pemberdayaan Masyarakat</span>
                         </div>
                         <div
                             className="flex items-center space-x-4"
@@ -116,7 +116,7 @@ const About = () => {
                             data-aos-delay="200"
                         >
                             <Image src="/aset-home/3.png" alt="produk" width={100} height={20} />
-                            <span className="text-green-700 font-semibold text-xl">Inovasi Produk Lokal</span>
+                            <span className="text-green-700 font-bold text-xl">Inovasi Produk Lokal</span>
                         </div>
                         <Separator className="my-12 md:my-0" />
                         <Image
@@ -139,11 +139,15 @@ const About = () => {
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                     <div className="relative z-10">
                         <h2
-                            className="text-4xl md:text-5xl font-bold text-center mb-16 text-white relative mt-10"
+                            className="text-4xl md:text-5xl font-bold text-center text-white relative mt-10"
                             data-aos="fade-up"
                         >
-                            Program Unggulan Kami
+                            Galeri
                         </h2>
+
+                        <p className="text-center text-white mt-5 mb-16" data-aos="fade-up">
+                            Ingin melihat lebih banyak foto tentang Program Karuna?
+                        </p>
 
                         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                             {[
@@ -194,7 +198,7 @@ const About = () => {
                                             />
                                         </div>
                                         <CardContent className="p-4 text-center">
-                                            <CardTitle className="text-lg font-semibold mb-2 text-green-700">
+                                            <CardTitle className="text-lg font-bold mb-2 text-green-700">
                                                 {item.title}
                                             </CardTitle>
                                             <p className="text-sm text-gray-600 mb-3">
@@ -229,20 +233,26 @@ const About = () => {
                         >
                             Produk Unggulan Kami
                         </h2>
+                        <p className="text-center text-white mt-5 mb-16" data-aos="fade-up">
+                            Temukan produk-produk unggulan dari Program Karuna
+                        </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
                             {[
                                 {
                                     nama: "Edu Product",
+                                    deskripsi: "Produk edukasi berupa buku dan media pembelajaran untuk anak-anak.",
                                     imageUrl: "/aset-home/4.png",
                                     href: "/produk/edu-product",
                                 },
                                 {
                                     nama: "Eco-eduwisata",
+                                    deskripsi: "Paket wisata edukasi yang mengajak peserta untuk belajar sambil berwisata.",
                                     imageUrl: "/aset-home/5.png",
                                     href: "/produk/eco-ed",
                                 },
                                 {
                                     nama: "Tour Guide",
+                                    deskripsi: "Paket wisata yang dilengkapi dengan pemandu wisata yang berpengalaman.",
                                     imageUrl: "/aset-home/6.png",
                                     href: "/produk/tour-guide",
                                 },
@@ -262,12 +272,18 @@ const About = () => {
                                             className="hover:scale-110 transition-all ease-in-out duration-150"
                                         />
                                     </div>
-                                    <div className="mt-28 text-center mb-10">
+                                    <div className="mt-28 text-center mb-10 px-4">
+                                        <h3 className="text-2xl font-bold text-green-700">
+                                            {item.nama}
+                                        </h3>
+                                        <p className="text-white mt-4 mb-8">
+                                            {item.deskripsi}
+                                        </p>
                                         <Link
                                             href={item.href}
                                             className="text-lg font-bold px-4 py-2 rounded-lg bg-green-700 text-white hover:opacity-75 transition-all ease-in-out duration-200"
                                         >
-                                            {item.nama}
+                                            Jelajahi
                                         </Link>
                                     </div>
                                 </Card>
