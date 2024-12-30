@@ -6,7 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { HelpCircle } from 'lucide-react'
 
 export const Faq = () => {
-    const [activeItem, setActiveItem] = useState<string | null>(null)
+    const [activeItem, setActiveItem] = useState<string | undefined>(undefined)
 
     const faqItems = [
         {
@@ -61,7 +61,7 @@ export const Faq = () => {
                             >
                                 <AccordionTrigger 
                                     className="flex justify-between items-center w-full p-4 text-left text-gray-800 hover:bg-green-50 transition-colors duration-200"
-                                    onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? null : `item-${index + 1}`)}
+                                    onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? undefined : `item-${index + 1}`)}
                                 >
                                     <span className="font-semibold text-lg">{item.question}</span>
                                 </AccordionTrigger>

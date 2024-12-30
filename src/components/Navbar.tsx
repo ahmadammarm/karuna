@@ -177,7 +177,7 @@ const Navbar = () => {
       >
         {(ref) => (
           <div className="md:hidden fixed inset-0 mt-16 bg-white w-full h-[40%] shadow-md" id="mobile-menu">
-            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div ref={ref as React.RefObject<HTMLDivElement>} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link
                 href="/"
                 className={`${
