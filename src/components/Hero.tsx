@@ -61,7 +61,7 @@ export const Hero = () => {
                             backgroundPositionY: `${offsetY}px`,
                         }}
                     >
-                        <div className="absolute inset-0 bg-black opacity-90"></div>
+                        <div className="absolute inset-0 bg-black opacity-80"></div>
 
                         <div className="container mx-auto relative z-10">
                             <div className="grid lg:grid-cols-2 gap-12 items-center md:gap-8">

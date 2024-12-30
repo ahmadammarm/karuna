@@ -130,7 +130,7 @@ const About = () => {
                 </div>
 
                 <h2
-                    className="text-3xl font-bold text-center mb-12"
+                    className="text-4xl md:text-5xl font-bold text-center mb-16 relative"
                     data-aos="fade-up"
                 >
                     Program Unggulan Kami
