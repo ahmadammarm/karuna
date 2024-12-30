@@ -28,9 +28,9 @@ export const Faq = () => {
     ]
 
     return (
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-green-50">
+        <section className="w-full mb-20 bg-gradient-to-b from-white to-green-50">
             <div className="container mx-auto px-4 md:px-6">
-                <motion.div 
+                <motion.div
                     className="flex flex-col items-center justify-center space-y-4 text-center"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -46,20 +46,20 @@ export const Faq = () => {
                     <div className="h-1 w-20 bg-green-600 rounded-full mt-2" />
                 </motion.div>
                 <div className="mx-auto max-w-3xl mt-12">
-                    <Accordion 
-                        type="single" 
-                        collapsible 
+                    <Accordion
+                        type="single"
+                        collapsible
                         className="w-full space-y-4"
                         value={activeItem}
                         onValueChange={setActiveItem}
                     >
                         {faqItems.map((item, index) => (
-                            <AccordionItem 
-                                key={index} 
+                            <AccordionItem
+                                key={index}
                                 value={`item-${index + 1}`}
                                 className="border border-green-200 rounded-lg overflow-hidden shadow-sm"
                             >
-                                <AccordionTrigger 
+                                <AccordionTrigger
                                     className="flex justify-between items-center w-full p-4 text-left text-gray-800 hover:bg-green-50 transition-colors duration-200"
                                     onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? undefined : `item-${index + 1}`)}
                                 >
@@ -67,7 +67,7 @@ export const Faq = () => {
                                 </AccordionTrigger>
                                 <AnimatePresence>
                                     {activeItem === `item-${index + 1}` && (
-                                        <AccordionContent 
+                                        <AccordionContent
                                             className="p-4 bg-white"
                                             forceMount
                                         >

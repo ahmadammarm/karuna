@@ -25,7 +25,7 @@ export default function Home() {
     }
 
     return (
-        <div className="bg-gradient-to-b from-white to-gray-100">
+        <div>
             <Hero />
             <About />
             <Faq />
