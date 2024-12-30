@@ -1,50 +1,56 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import Image from "next/image"
 import { Card, CardContent, CardTitle } from "./ui/card"
-import { motion, useInView } from 'framer-motion'
 import { Separator } from './ui/separator'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const About = () => {
-    const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
-
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show')
-                }
-            })
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: false,
+            offset: 120,
+            delay: 50,
         })
 
-        const hiddenElements = document.querySelectorAll('.hidden-element')
-        hiddenElements.forEach((el) => observer.observe(el))
+        const handleRoute = () => {
+            AOS.refresh()
+        }
+
+        window.addEventListener('popstate', handleRoute)
+
+        window.addEventListener('scroll', () => {
+            AOS.refresh()
+        })
 
         return () => {
-            hiddenElements.forEach((el) => observer.unobserve(el))
+            window.removeEventListener('popstate', handleRoute)
+            window.removeEventListener('scroll', () => {
+                AOS.refresh()
+            })
         }
     }, [])
 
     return (
         <div className="bg-gradient-to-b from-white to-green-50 mt-96 md:mt-0">
             <div className="container mx-auto px-4 py-16 md:py-24 md:mt-0">
-                <motion.h1
+                <h1
                     className="text-4xl md:text-5xl font-bold text-center mb-16 relative"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
+                    data-aos="fade-down"
+                    data-aos-duration="800"
                 >
                     Tentang Kami
-                </motion.h1>
+                </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
-                    <motion.div
+                    <div
                         className="flex items-center justify-center"
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
                     >
                         <div className="bg-green-950 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-24 h-24">
@@ -55,14 +61,18 @@ const About = () => {
                             <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-white">
                                 Apa sih itu
                                 <br />
-                                <span className="text-green-300 relative ">
+                                <span className="text-green-300 relative">
                                     Program Karuna?
                                 </span>
                             </h2>
                             <p className="text-white mb-8 text-lg relative z-10">
                                 Program Karuna adalah program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Bintang Harapan dalam mengoptimalkan potensi Perkebunan Jambu di Desa Gunung Sari.
                             </p>
-                            <div className="flex justify-center relative z-10">
+                            <div
+                                className="flex justify-center relative z-10"
+                                data-aos="zoom-in"
+                                data-aos-delay="200"
+                            >
                                 <Image
                                     src="/aset-home/about.png"
                                     alt="Program Karuna Illustration"
@@ -74,12 +84,11 @@ const About = () => {
                                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-green-200 rounded-full opacity-50 z-0" />
                             </div>
                         </div>
-                    </motion.div>
-                    <motion.div
+                    </div>
+                    <div
                         className="flex flex-col justify-center space-y-6"
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
                     >
                         <h3 className="text-2xl md:text-3xl font-semibold text-green-700">
                             Selamat Datang di Program Karuna!
@@ -92,22 +101,42 @@ const About = () => {
                             Tidak berhenti di sana, kami juga menciptakan diversifikasi produk hasil perkebunan yang berupa ecoprint dan keripik
                             jambu. Selain itu, produk hasil integrated farming berupa pupuk Eco Farming juga menjadi fokus kami.
                         </p>
-                        <div className="flex items-center space-x-4 mt-4">
-                                <Image src="/aset-home/2.png" alt="masyarakat" width={100} height={20} />
+                        <div
+                            className="flex items-center space-x-4 mt-4"
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                        >
+                            <Image src="/aset-home/2.png" alt="masyarakat" width={100} height={20} />
                             <span className="text-green-700 font-semibold">Pemberdayaan Masyarakat</span>
                         </div>
-                        <div className="flex items-center space-x-4">
-                                <Image src="/aset-home/3.png" alt="produk" width={100} height={20} />
+                        <div
+                            className="flex items-center space-x-4"
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                        >
+                            <Image src="/aset-home/3.png" alt="produk" width={100} height={20} />
                             <span className="text-green-700 font-semibold">Inovasi Produk Lokal</span>
                         </div>
                         <Separator className="my-12 md:my-0" />
-                        <Image alt="logo um" src="/aset-home/logo-um.png" width={450} height={100} />
-                    </motion.div>
+                        <Image
+                            alt="logo um"
+                            src="/aset-home/logo-um.png"
+                            width={450}
+                            height={100}
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                        />
+                    </div>
                 </div>
 
-                <h2 className="text-3xl font-bold text-center mb-12">Program Unggulan Kami</h2>
+                <h2
+                    className="text-3xl font-bold text-center mb-12"
+                    data-aos="fade-up"
+                >
+                    Program Unggulan Kami
+                </h2>
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4" ref={ref}>
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                     {[
                         {
                             title: "Pelatihan Product Eco-Print Daun Jambu",
@@ -134,12 +163,11 @@ const About = () => {
                             rating: 5
                         }
                     ].map((item, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            className="hidden-element"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={isInView ? { opacity: 1, y: 0 } : {}}
-                            transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
+                            data-aos="fade-up"
+                            data-aos-delay={index * 150}
+                            data-aos-anchor-placement="top-bottom"
                         >
                             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
                                 <div className="relative h-48">
@@ -174,7 +202,7 @@ const About = () => {
                                     </div>
                                 </CardContent>
                             </Card>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>
@@ -183,4 +211,3 @@ const About = () => {
 }
 
 export default About
-
