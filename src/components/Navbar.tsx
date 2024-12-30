@@ -47,11 +47,21 @@ const Navbar = () => {
                 href="/"
                 className={`${
                   pathname === '/'
-                    ? 'bg-green-200 text-green-900'
+                    ? 'bg-green-200 text-green-900 font-bold'
                     : 'text-green-700 hover:bg-green-200 hover:text-green-900'
-                } px-3 py-2 rounded-md text-sm font-bold`}
+                } px-3 py-2 rounded-md text-sm`}
               >
                 Beranda
+              </Link>
+              <Link
+                href="/about"
+                className={`${
+                  pathname === '/about'
+                    ? 'bg-green-200 text-green-900'
+                    : 'text-green-700 hover:bg-green-200 hover:text-green-900'
+                } px-3 py-2 rounded-md text-sm`}
+              >
+                About
               </Link>
               <div className="relative">
                 <button
@@ -187,6 +197,16 @@ const Navbar = () => {
                 } block px-3 py-2 rounded-md text-base font-medium`}
               >
                 Beranda
+              </Link>
+              <Link
+                href="/about"
+                className={`${
+                  pathname === '/about'
+                    ? 'bg-green-200 text-green-900'
+                    : 'text-green-700 hover:bg-green-200 hover:text-green-900'
+                } block px-3 py-2 rounded-md text-base font-medium`}
+              >
+                About
               </Link>
               <button
                 onClick={() => setEcoEduwisataOpen(!ecoEduwisataOpen)}

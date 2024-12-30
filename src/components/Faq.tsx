@@ -28,7 +28,7 @@ export const Faq = () => {
     ]
 
     return (
-        <section className="w-full mb-20 bg-gradient-to-b from-white to-green-50">
+        <section className="w-full pb-20">
             <div className="container mx-auto px-4 md:px-6">
                 <motion.div
                     className="flex flex-col items-center justify-center space-y-4 text-center"

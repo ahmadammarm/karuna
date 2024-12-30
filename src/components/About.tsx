@@ -7,7 +7,6 @@ import { Separator } from './ui/separator'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Link from 'next/link'
-import { Button } from './ui/button'
 
 const About = () => {
     useEffect(() => {
@@ -247,7 +246,7 @@ const About = () => {
                                     imageUrl: "/aset-home/6.png",
                                     href: "/produk/tour-guide",
                                 },
-                            ].map((item: any, index: any) => (
+                            ].map((item, index) => (
                                 <Card key={index}
                                     className="relative flex flex-col items-center pt-16 bg-zinc-900 border-none mb-20"
                                     data-aos="fade-up"
@@ -274,7 +273,6 @@ const About = () => {
                                 </Card>
                             ))}
                         </div>
-
                     </div>
                 </div>
             </div>
