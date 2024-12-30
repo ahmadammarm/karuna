@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import Image from "next/image"
 import { Card, CardContent, CardTitle } from "./ui/card"
 import { motion, useInView } from 'framer-motion'
+import { Separator } from './ui/separator'
 
 const About = () => {
     const ref = useRef(null)
@@ -36,12 +37,6 @@ const About = () => {
                     transition={{ duration: 0.5 }}
                 >
                     Tentang Kami
-                    <motion.div
-                        className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-green-500"
-                        initial={{ scaleX: 0 }}
-                        animate={{ scaleX: 1 }}
-                        transition={{ duration: 0.5, delay: 0.5 }}
-                    />
                 </motion.h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
@@ -51,35 +46,30 @@ const About = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        <div className="bg-green-50 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
+                        <div className="bg-green-950 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-24 h-24">
                                 <svg viewBox="0 0 100 100" className="text-green-200 opacity-50">
                                     <path d="M100,0 C60,30 40,70 0,100 L100,100 Z" fill="currentColor" />
                                 </svg>
                             </div>
-                            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative">
+                            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-white">
                                 Apa sih itu
                                 <br />
-                                <span className="text-green-700 relative">
+                                <span className="text-green-300 relative ">
                                     Program Karuna?
-                                    <motion.div
-                                        className="absolute bottom-0 left-0 w-full h-1 bg-green-500"
-                                        initial={{ scaleX: 0 }}
-                                        animate={{ scaleX: 1 }}
-                                        transition={{ duration: 0.5, delay: 0.7 }}
-                                    />
                                 </span>
                             </h2>
-                            <p className="text-gray-600 mb-8 text-lg relative z-10">
+                            <p className="text-white mb-8 text-lg relative z-10">
                                 Program Karuna adalah program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Bintang Harapan dalam mengoptimalkan potensi Perkebunan Jambu di Desa Gunung Sari.
                             </p>
-                            <div className="relative">
+                            <div className="flex justify-center relative z-10">
                                 <Image
                                     src="/aset-home/about.png"
                                     alt="Program Karuna Illustration"
                                     width={500}
                                     height={300}
                                     className="rounded-xl shadow-md object-cover"
+                                    loading="lazy"
                                 />
                                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-green-200 rounded-full opacity-50 z-0" />
                             </div>
@@ -103,21 +93,15 @@ const About = () => {
                             jambu. Selain itu, produk hasil integrated farming berupa pupuk Eco Farming juga menjadi fokus kami.
                         </p>
                         <div className="flex items-center space-x-4 mt-4">
-                            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
+                                <Image src="/aset-home/2.png" alt="masyarakat" width={100} height={20} />
                             <span className="text-green-700 font-semibold">Pemberdayaan Masyarakat</span>
                         </div>
                         <div className="flex items-center space-x-4">
-                            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                                </svg>
-                            </div>
+                                <Image src="/aset-home/3.png" alt="produk" width={100} height={20} />
                             <span className="text-green-700 font-semibold">Inovasi Produk Lokal</span>
                         </div>
+                        <Separator className="my-12 md:my-0" />
+                        <Image alt="logo um" src="/aset-home/logo-um.png" width={450} height={100} />
                     </motion.div>
                 </div>
 
