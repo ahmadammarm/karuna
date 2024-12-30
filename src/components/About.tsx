@@ -36,7 +36,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className="bg-gradient-to-b from-white to-green-50 mt-96 md:mt-0">
+        <div className="bg-gradient-to-b from-white to-green-50 mt-96 md:mt-0 overflow-hidden">
             <div className="container mx-auto px-4 py-16 md:py-24 md:mt-0">
                 <h1
                     className="text-4xl md:text-5xl font-bold text-center mb-16 relative"

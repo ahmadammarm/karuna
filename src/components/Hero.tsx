@@ -56,7 +56,7 @@ export const Hero = () => {
     };
 
     return (
-        <div className="relative w-full min-h-screen">
+        <div className="relative w-full min-h-screen overflow-hidden">
             {slides.map((slide, index) => (
                 <div
                     key={index}
