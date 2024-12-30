@@ -1,0 +1,202 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import Image from "next/image"
+import { Card, CardContent, CardTitle } from "./ui/card"
+import { motion, useInView } from 'framer-motion'
+
+const About = () => {
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show')
+                }
+            })
+        })
+
+        const hiddenElements = document.querySelectorAll('.hidden-element')
+        hiddenElements.forEach((el) => observer.observe(el))
+
+        return () => {
+            hiddenElements.forEach((el) => observer.unobserve(el))
+        }
+    }, [])
+
+    return (
+        <div className="bg-gradient-to-b from-white to-green-50 mt-96 md:mt-0">
+            <div className="container mx-auto px-4 py-16 md:py-24 md:mt-0">
+                <motion.h1
+                    className="text-4xl md:text-5xl font-bold text-center mb-16 relative"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Tentang Kami
+                    <motion.div
+                        className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-green-500"
+                        initial={{ scaleX: 0 }}
+                        animate={{ scaleX: 1 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                    />
+                </motion.h1>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+                    <motion.div
+                        className="flex items-center justify-center"
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                        <div className="bg-green-50 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-24 h-24">
+                                <svg viewBox="0 0 100 100" className="text-green-200 opacity-50">
+                                    <path d="M100,0 C60,30 40,70 0,100 L100,100 Z" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative">
+                                Apa sih itu
+                                <br />
+                                <span className="text-green-700 relative">
+                                    Program Karuna?
+                                    <motion.div
+                                        className="absolute bottom-0 left-0 w-full h-1 bg-green-500"
+                                        initial={{ scaleX: 0 }}
+                                        animate={{ scaleX: 1 }}
+                                        transition={{ duration: 0.5, delay: 0.7 }}
+                                    />
+                                </span>
+                            </h2>
+                            <p className="text-gray-600 mb-8 text-lg relative z-10">
+                                Program Karuna adalah program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Bintang Harapan dalam mengoptimalkan potensi Perkebunan Jambu di Desa Gunung Sari.
+                            </p>
+                            <div className="relative">
+                                <Image
+                                    src="/aset-home/about.png"
+                                    alt="Program Karuna Illustration"
+                                    width={500}
+                                    height={300}
+                                    className="rounded-xl shadow-md object-cover"
+                                />
+                                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-green-200 rounded-full opacity-50 z-0" />
+                            </div>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        className="flex flex-col justify-center space-y-6"
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                    >
+                        <h3 className="text-2xl md:text-3xl font-semibold text-green-700">
+                            Selamat Datang di Program Karuna!
+                        </h3>
+                        <p className="text-gray-600 text-lg leading-relaxed">
+                            Kami hadir mengusung program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Bintang Harapan dalam mengoptimalkan potensi
+                            Perkebunan Jambu di Desa Gunung Sari.
+                        </p>
+                        <p className="text-gray-600 text-lg leading-relaxed">
+                            Tidak berhenti di sana, kami juga menciptakan diversifikasi produk hasil perkebunan yang berupa ecoprint dan keripik
+                            jambu. Selain itu, produk hasil integrated farming berupa pupuk Eco Farming juga menjadi fokus kami.
+                        </p>
+                        <div className="flex items-center space-x-4 mt-4">
+                            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <span className="text-green-700 font-semibold">Pemberdayaan Masyarakat</span>
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </div>
+                            <span className="text-green-700 font-semibold">Inovasi Produk Lokal</span>
+                        </div>
+                    </motion.div>
+                </div>
+
+                <h2 className="text-3xl font-bold text-center mb-12">Program Unggulan Kami</h2>
+
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4" ref={ref}>
+                    {[
+                        {
+                            title: "Pelatihan Product Eco-Print Daun Jambu",
+                            imageUrl: "/aset-home/banner-1.jpeg",
+                            description: "Mengajarkan teknik eco-print menggunakan daun jambu untuk menciptakan produk unik dan ramah lingkungan.",
+                            rating: 5
+                        },
+                        {
+                            title: "Petik Jambu Sepuasnya & Edukasi",
+                            imageUrl: "/aset-home/banner-2.png",
+                            description: "Pengalaman memetik jambu langsung dari kebun sambil belajar tentang budidaya dan manfaat jambu.",
+                            rating: 5
+                        },
+                        {
+                            title: "Pengelolaan Wisata Petik Jambu",
+                            imageUrl: "/aset-home/banner-3.jpg",
+                            description: "Pelatihan manajemen wisata untuk mengoptimalkan potensi kebun jambu sebagai destinasi agrowisata.",
+                            rating: 5
+                        },
+                        {
+                            title: "Pelatihan Integrated Farming",
+                            imageUrl: "/aset-home/banner-4.jpg",
+                            description: "Mengedukasi tentang sistem pertanian terpadu untuk meningkatkan produktivitas dan keberlanjutan.",
+                            rating: 5
+                        }
+                    ].map((item, index) => (
+                        <motion.div
+                            key={index}
+                            className="hidden-element"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
+                            transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
+                        >
+                            <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                                <div className="relative h-48">
+                                    <Image
+                                        src={item.imageUrl}
+                                        alt={item.title}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="transition-transform duration-300 hover:scale-105"
+                                        loading='lazy'
+                                    />
+                                </div>
+                                <CardContent className="p-4 text-center">
+                                    <CardTitle className="text-lg font-semibold mb-2 text-green-700">
+                                        {item.title}
+                                    </CardTitle>
+                                    <p className="text-sm text-gray-600 mb-3">{item.description}</p>
+                                    <div className="flex justify-center space-x-1">
+                                        {[...Array(5)].map((_, i) => (
+                                            <svg
+                                                key={i}
+                                                className="w-5 h-5 text-yellow-400"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                                />
+                                            </svg>
+                                        ))}
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default About
+
