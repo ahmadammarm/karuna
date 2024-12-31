@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const Hero = () => {
@@ -84,7 +84,7 @@ export const Hero = () => {
                                         loading="lazy"                                    />
                                 </div>
                                 <div className="text-center lg:text-left space-y-4 pl-0 md:pl-8 order-2 md:order-1">
-                                    <h1 
+                                    <h1
                                     className="text-white text-4xl lg:text-6xl font-bold cursor-default mt-14 mb-10 px-3 font-sans"
                                     style={{
                                         fontFamily: "serif"

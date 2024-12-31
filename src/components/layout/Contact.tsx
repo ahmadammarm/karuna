@@ -4,7 +4,6 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div>
             <div
                 className="w-full relative bg-cover bg-center bg-no-repeat py-10 md:py-16 px-12 md:px-24 mb-0"
                 style={{
@@ -30,7 +29,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 

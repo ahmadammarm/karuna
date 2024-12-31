@@ -2,8 +2,8 @@
 
 import { useEffect } from 'react'
 import Image from "next/image"
-import { Card, CardContent, CardTitle } from "./ui/card"
-import { Separator } from './ui/separator'
+import { Card, CardContent, CardTitle } from "../ui/card"
+import { Separator } from '../ui/separator'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Link from 'next/link'
@@ -94,6 +94,9 @@ const About = () => {
                         <h3 className="text-2xl md:text-3xl font-bold text-green-700">
                             Selamat Datang di Program Karuna!
                         </h3>
+                        <p className="text-gray-600 text-lg leading-relaxed">
+                            Karuna merupakan program hasil Pekan Kreativitas Mahasiswa bidang Pengabdian Masyarakat yang berada di bawah naungan Kemendikbud Ristek.
+                        </p>
                         <p className="text-gray-600 text-lg leading-relaxed">
                             Kami hadir mengusung program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Bintang Harapan dalam mengoptimalkan potensi
                             Perkebunan Jambu di Desa Gunung Sari.
