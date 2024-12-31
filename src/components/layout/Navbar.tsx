@@ -49,7 +49,7 @@ const Navbar = () => {
                   pathname === '/'
                     ? 'bg-green-200 text-green-900 font-bold'
                     : 'text-green-700 hover:bg-green-200 hover:text-green-900'
-                } px-3 py-2 rounded-md text-sm`}
+                } px-3 py-2 rounded-md text-sm font-medium`}
               >
                 Beranda
               </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
                 href="/about"
                 className={`${
                   pathname === '/about'
-                    ? 'bg-green-200 text-green-900'
+                    ? 'bg-green-200 text-green-900 font-bold'
                     : 'text-green-700 hover:bg-green-200 hover:text-green-900'
                 } px-3 py-2 rounded-md text-sm font-medium`}
               >
@@ -103,7 +103,7 @@ const Navbar = () => {
                 href="/eco-product"
                 className={`${
                   pathname === '/eco-product'
-                    ? 'bg-green-200 text-green-900'
+                    ? 'bg-green-200 text-green-900 font-bold'
                     : 'text-green-700 hover:bg-green-200 hover:text-green-900'
                 } px-3 py-2 rounded-md text-sm font-medium`}
               >
@@ -149,7 +149,7 @@ const Navbar = () => {
                 href="/faqs"
                 className={`${
                   pathname === '/faqs'
-                    ? 'bg-green-200 text-green-900'
+                    ? 'bg-green-200 text-green-900 font-bold'
                     : 'text-green-700 hover:bg-green-200 hover:text-green-900'
                 } px-3 py-2 rounded-md text-sm font-medium`}
               >
