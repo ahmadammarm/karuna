@@ -2,7 +2,6 @@
 
 import Contact from "@/components/layout/Contact";
 import Loading from "@/components/layout/Loading";
-import { div } from "framer-motion/client";
 import React, { useState } from "react";
 
 export default function PagesLayout({
