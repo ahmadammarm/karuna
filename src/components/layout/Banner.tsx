@@ -31,7 +31,7 @@ const Banner: React.FC<BannerProps> = ({
                       /  {subtitle}
                     </span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: 'Pacifico, cursive' }}>
+                <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ fontFamily: 'Pacifico, cursive' }}>
                     {title}
                 </h2>
             </div>

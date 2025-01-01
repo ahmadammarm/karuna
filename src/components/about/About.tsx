@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Separator } from '../ui/separator'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Card, CardContent, CardDescription, CardTitle } from '../ui/card'
 
 
 const About = () => {
@@ -34,6 +35,24 @@ const About = () => {
             })
         }
     }, [])
+
+    const productCard = [
+        {
+            title: "Fashion",
+            description: "Olahan Ecoprint daun jambu untuk tas fashion dan lainnya.",
+            imageUrl: "/aset-about/8.png"
+        },
+        {
+            title: "Pupuk Organik",
+            description: "Pupuk organik Ecoenzyme dari limbah kotoran kambing.",
+            imageUrl: "/aset-about/9.png"
+        },
+        {
+            title: "Food & Beverage",
+            description: "Berbagai olahan makanan dan minuman dari jambu.",
+            imageUrl: "/aset-about/10.png"
+        }
+    ]
 
     return (
         <div className="mt-96 md:mt-0 overflow-hidden">
@@ -141,6 +160,40 @@ const About = () => {
                     <div className="md:mt-10" data-aos="fade-up">
                         <Image src="/aset-about/tujuan.png" alt="konten" width={500} height={400} />
                     </div>
+                </div>
+
+                <h1 className="text-center mt-16 text-3xl md:text-5xl font-bold" data-aos="fade-up" data-aos-delay="100">
+                    PRODUK WISATA
+                </h1>
+                <p className="text-lg text-gray-700 font-semibold text-center mt-5 px-4" data-aos="fade-up" data-aos-delay="100">
+                    Selain memetik jambu, pengunjung dapat menikmati suasana alam serta membeli produk olahan lokal di Wisata Petik Jambu Firdaus, menjadikan kunjungan berkesan.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-4 py-5">
+                    {productCard.map((item, index) => (
+                        <Card
+                            key={index}
+                            className="mt-10 shadow-md"
+                            data-aos="fade-up"
+                            data-aos-delay={index * 150}
+                            data-aos-anchor-placement="top-bottom"
+                        >
+                            <CardTitle className="text-center py-5 px-4 text-2xl font-bold font-sans">
+                                {item.title}
+                            </CardTitle>
+                            <CardContent className="flex items-center justify-center">
+                                <Image
+                                    src={`${item.imageUrl}`}
+                                    alt="image"
+                                    width={300}
+                                    height={100}
+                                    className="rounded-lg hover:scale-105 transition-transform ease-in-out duration-300"
+                                />
+                            </CardContent>
+                            <CardDescription className="text-center py-5 px-3 text-lg font-serif font-bold">
+                                {item.description}
+                            </CardDescription>
+                        </Card>
+                    ))}
                 </div>
             </div>
         </div>
