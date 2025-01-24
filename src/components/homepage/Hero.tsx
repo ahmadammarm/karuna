@@ -11,13 +11,13 @@ export const Hero = () => {
 
     const slides = [
         {
-            image: "/aset-home/banner-1.jpeg",
+            image: "/aset-home/banner-3.jpg",
             title: "Selamat datang di",
             titleHighlight: "Program Karuna",
             description: "Optimalisasi Wisata Petik Jambu sebagai Eco-eduwisata Melalui Peningkatan Entrepreneur Skills Berbasis Community-Based Inclusive Development dengan Pemberdayaan Paguyuban Disabilitas",
             buttonText: "Selengkapnya",
             buttonLink: "/about",
-            imageUrl: "/aset-home/banner-1.jpeg",
+            imageUrl: "/aset-home/banner-3.jpg",
         },
         {
             image: "/aset-home/hero.webp",
