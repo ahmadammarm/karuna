@@ -114,7 +114,7 @@ export const Footer = () => {
                     </div>
                     <div className="w-full h-[300px] rounded-lg overflow-hidden">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15802.338516568014!2d112.68666224793445!3d-8.041687321764899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6268a2ca76335%3A0x2c8f94be821ae5e4!2sGunungsari%2C%20Tajinan%2C%20Malang%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1735529030355!5m2!1sen!2sid"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.507420955202!2d112.70717719999999!3d-8.0496091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd627005d181211%3A0x48323e0f76be6bc3!2sPaguyuban%20Orang%20Tua%20Penyandang%20Disabilitas%20Amanah%20Bersama!5e0!3m2!1sen!2sid!4v1738504714027!5m2!1sen!2sid"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}

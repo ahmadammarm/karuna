@@ -90,7 +90,7 @@ const Navbar = () => {
                   <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                       <Link href="/edugo-pick" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-900">
-                        EduGo Pick
+                        EduGu Pick
                       </Link>
                       <Link href="/animal-explore" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-100 hover:text-green-900">
                         Animal Explore
@@ -222,7 +222,7 @@ const Navbar = () => {
               {ecoEduwisataOpen && (
                 <div className="pl-4">
                   <Link href="/edugo-pick" className="text-green-700 hover:bg-green-200 hover:text-green-900 block px-3 py-2 rounded-md text-sm font-medium">
-                    EduGo Pick
+                    EduGu Pick
                   </Link>
                   <Link href="/animal-explore" className="text-green-700 hover:bg-green-200 hover:text-green-900 block px-3 py-2 rounded-md text-sm font-medium">
                     Animal Explore
