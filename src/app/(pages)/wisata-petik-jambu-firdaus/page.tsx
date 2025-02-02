@@ -6,7 +6,7 @@ import Loading from "@/components/layout/Loading"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { MapPin, Clock, Phone, Facebook, Instagram, Twitter } from "lucide-react"
+import { MapPin, Phone, Facebook, Instagram, Twitter } from "lucide-react"
 
 export default function WisataPage() {
   const [isLoading, setIsLoading] = useState(true)

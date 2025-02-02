@@ -90,7 +90,7 @@ const MemberCard = ({ member, isLeader = false }: { member: Member; isLeader?: b
       <p className="text-gray-600 mb-4">{member.role}</p>
       <p className="mb-4">{member.bio}</p>
       <div className="flex flex-wrap gap-2 mb-4">
-        {(isLeader ? member.expertise ?? [] : member.skills ?? []).map((skill: any) => (
+        {(isLeader ? member.expertise ?? [] : member.skills ?? []).map((skill) => (
           <span key={skill} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
             {skill}
           </span>
