@@ -21,18 +21,18 @@ export const Hero = () => {
         },
         {
             image: "/aset-home/hero.webp",
-            title: "Selamat datang di",
-            titleHighlight: "Program Dispreneursive",
-            description: "Pemberdayaan entrepreneur skills melalui Optimalisasi Kearifan Lokal Petik Jambu Sebagai Eco-Eduwisata di Paguyuban Disabilitas Desa Gunung Sari, Malang",
+            title: "Edugu",
+            titleHighlight: "Pick",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             buttonText: "Jelajahi",
             buttonLink: "/edugo-pick",
             imageUrl: "/aset-home/hero.webp",
         },
         {
             image: "/aset-home/hero2.webp",
-            title: "Selamat datang di",
-            titleHighlight: "Program Dispreneursive",
-            description: "Pemberdayaan entrepreneur skills melalui Optimalisasi Kearifan Lokal Petik Jambu Sebagai Eco-Eduwisata di Paguyuban Disabilitas Desa Gunung Sari, Malang",
+            title: "Animal",
+            titleHighlight: "Explore",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             buttonText: "Jelajahi",
             buttonLink: "/#programs",
             imageUrl: "/aset-home/hero2.webp"
@@ -69,7 +69,7 @@ export const Hero = () => {
                         className="w-full min-h-screen flex items-center pt-12 bg-cover bg-center relative py-14"
                         style={{
                             backgroundImage: `url('${slide.image}')`,
-                            backgroundPositionY: `${offsetY}px`,
+                            backgroundSize: 'cover'
                         }}
                     >
                         <div className="absolute inset-0 bg-black opacity-80"></div>
@@ -86,11 +86,8 @@ export const Hero = () => {
                                 <div className="text-center lg:text-left space-y-4 pl-0 md:pl-8 order-2 md:order-1">
                                     <h1
                                     className="text-white text-4xl lg:text-6xl font-bold cursor-default mt-14 mb-10 px-3 font-sans"
-                                    style={{
-                                        fontFamily: "serif"
-                                    }}
                                     >
-                                        {slide.title} <span className="text-green-600 font-sans" style={{ fontFamily: "serif" }}>{slide.titleHighlight}</span>
+                                        {slide.title} <span className="text-green-600 font-sans">{slide.titleHighlight}</span>
                                     </h1>
                                     <p className="text-white text-lg lg:text-xl leading-relaxed font-medium cursor-default px-3 font-sans">
                                         {slide.description}
