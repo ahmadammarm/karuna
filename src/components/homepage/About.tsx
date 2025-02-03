@@ -6,7 +6,7 @@ import { Card, CardContent, CardTitle } from "../ui/card"
 import { Separator } from '../ui/separator'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Link from 'next/link'
+import Link from 'next/link';
 
 const About = () => {
     useEffect(() => {
