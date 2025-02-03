@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const Hero = () => {
-    const [offsetY, setOffsetY] = useState(0);
+    const [, setOffsetY] = useState(0);
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const slides = [
