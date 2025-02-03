@@ -37,10 +37,10 @@ const About = () => {
     }, [])
 
     return (
-        <div className="mt-10 md:mt-0 overflow-hidden">
+        <div className="overflow-hidden bg-green-900">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
-                    className="text-4xl md:text-5xl font-bold text-center mb-16 relative"
+                    className="text-white text-4xl md:text-5xl font-bold text-center mb-16 relative mt-20 md:mt-0"
                     data-aos="fade-down"
                     data-aos-duration="800"
                 >
@@ -53,7 +53,7 @@ const About = () => {
                         data-aos="fade-right"
                         data-aos-duration="1000"
                     >
-                        <div className="bg-green-900 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
+                        <div className="bg-green-900 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden border">
                             <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-white">
                                 Seputar
                                 <br />
@@ -85,40 +85,40 @@ const About = () => {
                         data-aos="fade-left"
                         data-aos-duration="1000"
                     >
-                        <h3 className="text-2xl md:text-3xl font-bold text-green-700">
+                        <h3 className="text-2xl md:text-3xl font-bold text-green-300">
                             Menarik banget kan??
                         </h3>
-                        <p className="text-gray-600 text-lg leading-relaxed">
+                        <p className="text-white text-lg leading-relaxed">
                              Apalagi program karuna ini dilaksanakan di Paguyuban Amanah Bersama yang berada di Desa Gunungronggo. Bukan cuma pelatihan ajaa, serunya lagii, hasil dari pelatihan ini nggak sekadar berhenti di teori aja, tapi langsung dipraktikkan! 
                         </p>
-                        <p className="text-gray-600 text-lg leading-relaxed">
+                        <p className="text-white text-lg leading-relaxed">
                             Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
                         </p>
                         <div
-                            className="flex items-center space-x-4 mt-4 bg-gradient-to-r from-green-700 to-green-500 rounded-lg"
+                            className="flex items-center space-x-4 mt-4 bg-zinc-900 rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >
                             <Image src="/aset-home/2.png" alt="masyarakat" width={200} height={40} />
-                            <span className="text-black font-bold text-2xl">Pemberdayaan Masyarakat</span>
+                            <span className="text-white font-bold text-xl">Pemberdayaan Masyarakat</span>
                         </div>
                         <div
-                            className="flex items-center space-x-4 bg-gradient-to-r from-green-500 to-green-700 rounded-lg"
+                            className="flex items-center space-x-4 bg-zinc-900 rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="200"
                         >
                             <Image src="/aset-home/3.png" alt="produk" width={200} height={40} />
-                            <span className="text-black font-bold text-2xl">Inovasi Produk Lokal</span>
+                            <span className="text-white font-bold text-xl">Inovasi Produk Lokal</span>
                         </div>
                         <Separator className="my-12 md:my-0" />
-                        <Image
-                            alt="logo um"
-                            src="/aset-home/logo-um.png"
-                            width={450}
-                            height={100}
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                        />
+                        <div className="p-3 bg-white rounded-lg w-[80%]" data-aos="fade-up" data-aos-delay="300">
+                            <Image
+                                alt="logo um"
+                                src="/aset-home/logo-um.png"
+                                width={450}
+                                height={100}
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -237,7 +237,7 @@ const About = () => {
                                 },
                             ].map((item, index) => (
                                 <Card key={index}
-                                    className="relative flex flex-col items-center pt-16 bg-zinc-900 border-none mb-20 mt-10"
+                                    className="relative flex flex-col items-center pt-16 bg-zinc-900 border-none mb-10 mt-10"
                                     data-aos="fade-up"
                                     data-aos-delay={index * 150}
                                     data-aos-anchor-placement="top-bottom"

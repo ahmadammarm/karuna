@@ -28,7 +28,7 @@ export const Faq = () => {
     ]
 
     return (
-        <section className="w-full pb-20">
+        <section className="w-full pb-20 bg-green-900">
             <div className="container mx-auto px-4 md:px-6">
                 <motion.div
                     className="flex flex-col items-center justify-center space-y-4 text-center"
@@ -36,14 +36,14 @@ export const Faq = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <HelpCircle className="w-12 h-12 text-green-600" />
-                    <h2 className="text-3xl font-bold text-gray-800">
+                    <HelpCircle className="w-12 h-12 text-green-300" />
+                    <h2 className="text-3xl font-bold text-white">
                         Pertanyaan yang Sering Diajukan
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-2xl">
+                    <p className="text-xl text-green-300 max-w-2xl">
                         Temukan jawaban untuk pertanyaan umum tentang Program Karuna
                     </p>
-                    <div className="h-1 w-20 bg-green-600 rounded-full mt-2" />
+                    <div className="h-1 w-20 bg-green-300 rounded-full mt-2" />
                 </motion.div>
                 <div className="mx-auto max-w-3xl mt-12">
                     <Accordion
@@ -57,10 +57,10 @@ export const Faq = () => {
                             <AccordionItem
                                 key={index}
                                 value={`item-${index + 1}`}
-                                className="border border-green-200 rounded-lg overflow-hidden shadow-sm"
+                                className="border border-green-700 rounded-lg overflow-hidden shadow-sm"
                             >
                                 <AccordionTrigger
-                                    className="flex justify-between items-center w-full p-4 text-left text-gray-800 hover:bg-green-50 transition-colors duration-200"
+                                    className="flex justify-between items-center w-full p-4 text-left text-white hover:bg-green-800 transition-colors duration-200"
                                     onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? undefined : `item-${index + 1}`)}
                                 >
                                     <span className="font-semibold text-lg">{item.question}</span>
@@ -68,7 +68,7 @@ export const Faq = () => {
                                 <AnimatePresence>
                                     {activeItem === `item-${index + 1}` && (
                                         <AccordionContent
-                                            className="p-4 bg-white"
+                                            className="p-4 bg-green-800"
                                             forceMount
                                         >
                                             <motion.div
@@ -77,7 +77,7 @@ export const Faq = () => {
                                                 exit={{ opacity: 0, height: 0 }}
                                                 transition={{ duration: 0.3 }}
                                             >
-                                                <p className="text-gray-600">{item.answer}</p>
+                                                <p className="text-green-300">{item.answer}</p>
                                             </motion.div>
                                         </AccordionContent>
                                     )}
@@ -90,4 +90,3 @@ export const Faq = () => {
         </section>
     )
 }
-
