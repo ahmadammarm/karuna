@@ -54,11 +54,6 @@ const About = () => {
                         data-aos-duration="1000"
                     >
                         <div className="bg-green-900 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-24 h-24">
-                                <svg viewBox="0 0 100 100" className="text-green-200 opacity-50">
-                                    <path d="M100,0 C60,30 40,70 0,100 L100,100 Z" fill="currentColor" />
-                                </svg>
-                            </div>
                             <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-white">
                                 Seputar
                                 <br />
@@ -82,7 +77,6 @@ const About = () => {
                                     className="object-cover"
                                     loading="lazy"
                                 />
-                                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-green-200 rounded-full opacity-50 z-0" />
                             </div>
                         </div>
                     </div>
@@ -101,20 +95,20 @@ const About = () => {
                             Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
                         </p>
                         <div
-                            className="flex items-center space-x-4 mt-4"
+                            className="flex items-center space-x-4 mt-4 bg-gradient-to-r from-green-700 to-green-500 rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >
                             <Image src="/aset-home/2.png" alt="masyarakat" width={200} height={40} />
-                            <span className="text-green-700 font-bold text-xl">Pemberdayaan Masyarakat</span>
+                            <span className="text-black font-bold text-2xl">Pemberdayaan Masyarakat</span>
                         </div>
                         <div
-                            className="flex items-center space-x-4"
+                            className="flex items-center space-x-4 bg-gradient-to-r from-green-500 to-green-700 rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="200"
                         >
                             <Image src="/aset-home/3.png" alt="produk" width={200} height={40} />
-                            <span className="text-green-700 font-bold text-xl">Inovasi Produk Lokal</span>
+                            <span className="text-black font-bold text-2xl">Inovasi Produk Lokal</span>
                         </div>
                         <Separator className="my-12 md:my-0" />
                         <Image
@@ -202,19 +196,6 @@ const About = () => {
                                             <p className="text-sm text-gray-600 mb-3">
                                                 {item.description}
                                             </p>
-                                            <div className="flex justify-center space-x-1">
-                                                {[...Array(5)].map((_, i) => (
-                                                    <svg
-                                                        key={i}
-                                                        className="w-5 h-5 text-yellow-400"
-                                                        fill="currentColor"
-                                                        viewBox="0 0 20 20"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                                    </svg>
-                                                ))}
-                                            </div>
                                         </CardContent>
                                     </Card>
                                 </div>

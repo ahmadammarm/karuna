@@ -17,7 +17,7 @@ export const Hero = () => {
             description: "Optimalisasi Wisata Petik Jambu sebagai Eco-eduwisata Melalui Peningkatan Entrepreneur Skills Berbasis Community-Based Inclusive Development dengan Pemberdayaan Paguyuban Disabilitas",
             buttonText: "Selengkapnya",
             buttonLink: "/about",
-            imageUrl: "/aset-home/banner-3.jpg",
+            imageUrl: "/aset-home/banner-3-copy.jpg",
         },
         {
             image: "/aset-home/hero.webp",
@@ -35,7 +35,7 @@ export const Hero = () => {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             buttonText: "Jelajahi",
             buttonLink: "/#programs",
-            imageUrl: "/aset-home/hero2.webp"
+            imageUrl: "/aset-home/hero2-copy.jpg"
         },
     ];
 
