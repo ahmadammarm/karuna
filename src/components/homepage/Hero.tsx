@@ -1,9 +1,9 @@
 "use client"
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react" 
 import Link from "next/link"
-import { Button } from "../ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "../ui/button"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export const Hero = () => {
     const [, setOffsetY] = useState(0);
