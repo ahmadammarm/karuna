@@ -53,15 +53,15 @@ const About = () => {
                         data-aos="fade-right"
                         data-aos-duration="1000"
                     >
-                        <div className="bg-green-900 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden border">
-                            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-white">
+                        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden border">
+                            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-black">
                                 Seputar
                                 <br />
-                                <span className="text-green-300 relative">
+                                <span className="text-green-900 relative">
                                     Karuna
                                 </span>
                             </h2>
-                            <p className="text-white mb-8 text-lg relative z-10">
+                            <p className="text-black mb-8 text-lg relative z-10">
                                 Hai Karuners! Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh! 
                             </p>
                             <div
