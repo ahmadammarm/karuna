@@ -14,8 +14,8 @@ const navItems = [
         href: "#",
         label: "Eco-Eduwisata",
         dropdown: [
-            { href: "/eco-eduwisata/edugu-pick", label: "Edugu Pick" },
-            { href: "/eco-eduwisata/animal-explore", label: "Animal Explore" },
+            { href: "/edugo-pick", label: "Edugu Pick" },
+            { href: "/animal-explore", label: "Animal Explore" },
         ],
     },
     { href: "/eco-product", label: "Eco-Product" },
@@ -23,8 +23,8 @@ const navItems = [
         href: "#",
         label: "Tour Guide",
         dropdown: [
-            { href: "/tour-guide/tim-pengembang", label: "Tim Pengembang" },
-            { href: "/tour-guide/wisata-jambu-firdaus", label: "Wisata Jambu Firdaus" },
+            { href: "/pengembang", label: "Tim Pengembang" },
+            { href: "/wisata-petik-jambu-firdaus", label: "Wisata Petik Jambu Firdaus" },
         ],
     },
     { href: "/faqs", label: "FAQs" },
