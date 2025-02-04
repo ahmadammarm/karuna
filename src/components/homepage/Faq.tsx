@@ -1,12 +1,21 @@
 'use client'
 
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { HelpCircle } from 'lucide-react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export const Faq = () => {
     const [activeItem, setActiveItem] = useState<string | undefined>(undefined)
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false
+        })
+    }, [])
 
     const faqItems = [
         {
@@ -30,22 +39,21 @@ export const Faq = () => {
     return (
         <section className="w-full pb-20 bg-gray-100">
             <div className="container mx-auto px-4 md:px-6">
-                <motion.div
+                <div
                     className="flex flex-col items-center justify-center space-y-4 text-center"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
                 >
-                    <HelpCircle className="w-12 h-12 text-green-600 mt-20" />
-                    <h2 className="text-3xl font-bold text-gray-800">
+                    <div className="flex items-center justify-center" data-aos="fade-up">
+                        <HelpCircle className="w-12 h-12 text-green-600 mt-20"/>
+                    </div>
+                    <h2 className="text-3xl font-bold text-gray-800" data-aos="fade-up">
                         Pertanyaan yang Sering Diajukan
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-2xl">
+                    <p className="text-xl text-gray-600 max-w-2xl" data-aos="fade-up">
                         Pertanyaan yang sering ditanyakan oleh pengunjung dan mungkin kamu juga menanyakannya.
                     </p>
-                    <div className="h-1 w-20 bg-green-600 rounded-full mt-2" />
-                </motion.div>
-                <div className="mx-auto max-w-3xl mt-12">
+                    <div className="h-1 w-20 bg-green-600 rounded-full mt-2" data-aos="fade-up"/>
+                </div>
+                <div className="mx-auto max-w-3xl mt-12" data-aos="fade-up">
                     <Accordion
                         type="single"
                         collapsible
@@ -71,14 +79,9 @@ export const Faq = () => {
                                             className="p-4 bg-white"
                                             forceMount
                                         >
-                                            <motion.div
-                                                initial={{ opacity: 0, height: 0 }}
-                                                animate={{ opacity: 1, height: 'auto' }}
-                                                exit={{ opacity: 0, height: 0 }}
-                                                transition={{ duration: 0.3 }}
-                                            >
+                                            <div>
                                                 <p className="text-gray-600">{item.answer}</p>
-                                            </motion.div>
+                                            </div>
                                         </AccordionContent>
                                     )}
                                 </AnimatePresence>
