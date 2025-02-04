@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Card, CardContent, CardTitle } from "../ui/card"
 import { Separator } from '../ui/separator'
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 import Link from 'next/link';
 
 const About = () => {
@@ -37,10 +37,10 @@ const About = () => {
     }, [])
 
     return (
-        <div className="overflow-hidden bg-lime-800">
+        <div className="overflow-hidden bg-lime-600">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
-                    className="text-white text-4xl md:text-5xl font-bold text-center mb-16 relative mt-32 md:mt-0"
+                    className="text-lime-950 text-4xl md:text-5xl font-bold text-center mb-16 relative mt-32 md:mt-0"
                     data-aos="fade-up"
                     data-aos-duration="800"
                 >
@@ -88,10 +88,10 @@ const About = () => {
                         <h3 className="text-2xl md:text-3xl font-black text-zinc-900 font-serif">
                             Menarik banget kan??
                         </h3>
-                        <p className="text-white text-lg leading-relaxed font-semibold">
+                        <p className="text-lime-950 text-lg leading-relaxed font-bold">
                              Apalagi program karuna ini dilaksanakan di Paguyuban Amanah Bersama yang berada di Desa Gunungronggo. Bukan cuma pelatihan ajaa, serunya lagii, hasil dari pelatihan ini nggak sekadar berhenti di teori aja, tapi langsung dipraktikkan!
                         </p>
-                        <p className="text-white text-lg leading-relaxed font-semibold">
+                        <p className="text-lime-950 text-lg leading-relaxed font-bold">
                             Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
                         </p>
                         <div
@@ -206,15 +206,15 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-lime-800 py-16 md:py-24 px-10 md:px-14">
+                <div className="bg-lime-600 py-16 md:py-24 px-10 md:px-14">
                     <div>
                         <h2
-                            className="text-4xl md:text-5xl font-bold text-center mb-16 text-white relative mt-10"
+                            className="text-4xl md:text-5xl font-bold text-center mb-16 text-lime-950 relative mt-10"
                             data-aos="fade-up"
                         >
                             Produk Kami
                         </h2>
-                        <p className="text-center text-white mt-5 mb-16" data-aos="fade-up">
+                        <p className="text-center text-lime-950 mt-5 mb-16" data-aos="fade-up">
                             Gimana, penasaran kan sama produk dari Karuna?
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
