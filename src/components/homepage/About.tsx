@@ -99,16 +99,16 @@ const About = () => {
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >
-                            <Image src="/aset-home/2.png" alt="masyarakat" width={200} height={40} />
-                            <span className="text-white font-bold text-xl">Pemberdayaan Masyarakat</span>
+                            <Image src="/aset-home/2.png" alt="masyarakat" width={180} height={40} />
+                            <span className="text-white font-bold text-xl text-center">Pemberdayaan Masyarakat</span>
                         </div>
                         <div
                             className="flex items-center space-x-4 bg-[#321007] rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="200"
                         >
-                            <Image src="/aset-home/3.png" alt="produk" width={200} height={40} />
-                            <span className="text-white font-bold text-xl">Inovasi Produk Lokal</span>
+                            <Image src="/aset-home/3.png" alt="produk" width={180} height={40} />
+                            <span className="text-white font-bold text-xl text-center">Inovasi Produk Lokal</span>
                         </div>
                         <Separator className="my-12 md:my-0" />
                         <div className="p-3 bg-white rounded-lg w-[80%]" data-aos="fade-up" data-aos-delay="300">
