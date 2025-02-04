@@ -37,7 +37,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className="overflow-hidden bg-green-900">
+        <div className="overflow-hidden bg-green-950">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
                     className="text-white text-4xl md:text-5xl font-bold text-center mb-16 relative mt-24 md:mt-0"
@@ -53,15 +53,15 @@ const About = () => {
                         data-aos="fade-right"
                         data-aos-duration="1000"
                     >
-                        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden border">
-                            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-black font-serif">
+                        <div className="bg-zinc-950 rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
+                            {/* <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-black font-serif">
                                 Seputar
                                 <br />
                                 <span className="text-green-900 relative font-serif">
                                     Karuna
                                 </span>
-                            </h2>
-                            <p className="text-black mb-8 text-lg relative z-10">
+                            </h2> */}
+                            <p className="text-white mb-8 text-lg relative z-10">
                                 Hai Karuners! Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh!
                             </p>
                             <div
@@ -95,7 +95,7 @@ const About = () => {
                             Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
                         </p>
                         <div
-                            className="flex items-center space-x-4 mt-4 bg-zinc-900 rounded-lg"
+                            className="flex items-center space-x-4 mt-4 bg-zinc-950 rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >
@@ -103,7 +103,7 @@ const About = () => {
                             <span className="text-white font-bold text-xl">Pemberdayaan Masyarakat</span>
                         </div>
                         <div
-                            className="flex items-center space-x-4 bg-zinc-900 rounded-lg"
+                            className="flex items-center space-x-4 bg-zinc-950 rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="200"
                         >
@@ -206,7 +206,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-green-900 py-16 md:py-24 px-10 md:px-14">
+                <div className="bg-green-950 py-16 md:py-24 px-10 md:px-14">
                     <div>
                         <h2
                             className="text-4xl md:text-5xl font-bold text-center mb-16 text-white relative mt-10"
@@ -239,7 +239,7 @@ const About = () => {
                                 },
                             ].map((item, index) => (
                                 <Card key={index}
-                                    className="relative flex flex-col items-center pt-16 bg-zinc-900 border-none mb-10 mt-10"
+                                    className="relative flex flex-col items-center pt-16 bg-zinc-950 border-none mb-10 mt-10"
                                     data-aos="fade-up"
                                     data-aos-delay={index * 150}
                                     data-aos-anchor-placement="top-bottom"
