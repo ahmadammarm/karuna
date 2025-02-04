@@ -41,7 +41,7 @@ export const Faq = () => {
   ]
 
   return (
-    <section className="w-full pb-20 bg-zinc-950">
+    <section className="w-full pb-20 bg-[#321007]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="flex items-center justify-center" data-aos="fade-up">
@@ -70,14 +70,14 @@ export const Faq = () => {
                 className="border border-lime-600 rounded-lg overflow-hidden shadow-sm"
               >
                 <AccordionTrigger
-                  className="flex justify-between items-center w-full p-4 text-left text-white hover:bg-zinc-900 transition-colors duration-200"
+                  className="flex justify-between items-center w-full p-4 text-left text-white hover:bg-[#321007] transition-colors duration-200"
                   onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? undefined : `item-${index + 1}`)}
                 >
                   <span className="font-semibold text-lg">{item.question}</span>
                 </AccordionTrigger>
                 <AnimatePresence>
                   {activeItem === `item-${index + 1}` && (
-                    <AccordionContent className="p-4 bg-zinc-900" forceMount>
+                    <AccordionContent className="p-4 bg-[#321007]" forceMount>
                       <div>
                         <p className="text-gray-300">{item.answer}</p>
                       </div>
