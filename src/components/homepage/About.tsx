@@ -85,7 +85,7 @@ const About = () => {
                         data-aos="fade-left"
                         data-aos-duration="1000"
                     >
-                        <h3 className="text-2xl md:text-3xl font-bold text-green-300">
+                        <h3 className="text-2xl md:text-3xl font-bold text-green-300 font-serif">
                             Menarik banget kan??
                         </h3>
                         <p className="text-white text-lg leading-relaxed">
@@ -125,7 +125,9 @@ const About = () => {
                 <div
                     className="w-full relative bg-cover bg-center bg-no-repeat py-16 md:py-24 px-12 md:px-24 mb-0"
                     style={{
-                        backgroundImage: `url('/aset-home/banner-5.jpg')`
+                        backgroundImage: `url('/aset-home/banner-5.jpg')`,
+                        backgroundSize: 'cover',
+                        backgroundAttachment: 'fixed'
                     }}
                 >
                     <div className="absolute inset-0 bg-black bg-opacity-50"></div>

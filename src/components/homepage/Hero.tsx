@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react" 
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Button } from "../ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
@@ -69,7 +69,8 @@ export const Hero = () => {
                         className="w-full min-h-screen flex items-center pt-12 bg-cover bg-center relative py-14"
                         style={{
                             backgroundImage: `url('${slide.image}')`,
-                            backgroundSize: 'cover'
+                            backgroundSize: 'cover',
+                            backgroundAttachment: 'fixed'
                         }}
                     >
                         <div className="absolute inset-0 bg-black opacity-80"></div>

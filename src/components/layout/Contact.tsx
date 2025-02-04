@@ -7,7 +7,9 @@ const Contact = () => {
             <div
                 className="w-full relative bg-cover bg-center bg-no-repeat py-10 md:py-16 px-12 md:px-24 mb-0"
                 style={{
-                    backgroundImage: `url('/aset-home/banner-5.jpg')`
+                    backgroundImage: `url('/aset-home/banner-5.jpg')`,
+                    backgroundSize: 'cover',
+                    backgroundAttachment: 'fixed'
                 }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>

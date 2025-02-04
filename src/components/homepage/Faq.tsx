@@ -41,7 +41,7 @@ export const Faq = () => {
                         Pertanyaan yang Sering Diajukan
                     </h2>
                     <p className="text-xl text-gray-600 max-w-2xl">
-                        Temukan jawaban untuk pertanyaan umum tentang Program Karuna
+                        Pertanyaan yang sering ditanyakan oleh pengunjung dan mungkin kamu juga menanyakannya.
                     </p>
                     <div className="h-1 w-20 bg-green-600 rounded-full mt-2" />
                 </motion.div>

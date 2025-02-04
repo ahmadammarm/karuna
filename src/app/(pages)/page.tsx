@@ -1,7 +1,7 @@
 "use client"
 
 import About from "@/components/homepage/About";
-import { Faq } from "@/components/homepage/Faq";
+import {Faq} from "@/components/homepage/Faq";
 import { Hero } from "@/components/homepage/Hero";
 import Contact from "@/components/layout/Contact";
 import Loading from "@/components/layout/Loading";
