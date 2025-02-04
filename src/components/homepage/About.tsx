@@ -40,7 +40,7 @@ const About = () => {
         <div className="overflow-hidden bg-green-900">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
-                    className="text-white text-4xl md:text-5xl font-bold text-center mb-16 relative mt-20 md:mt-0"
+                    className="text-white text-4xl md:text-5xl font-bold text-center mb-16 relative mt-24 md:mt-0"
                     data-aos="fade-down"
                     data-aos-duration="800"
                 >
@@ -54,15 +54,15 @@ const About = () => {
                         data-aos-duration="1000"
                     >
                         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden border">
-                            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-black">
+                            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-black font-serif">
                                 Seputar
                                 <br />
-                                <span className="text-green-900 relative">
+                                <span className="text-green-900 relative font-serif">
                                     Karuna
                                 </span>
                             </h2>
                             <p className="text-black mb-8 text-lg relative z-10">
-                                Hai Karuners! Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh! 
+                                Hai Karuners! Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh!
                             </p>
                             <div
                                 className="flex justify-center relative z-10"
@@ -72,8 +72,8 @@ const About = () => {
                                 <Image
                                     src="/aset-home/about.png"
                                     alt="Program Karuna Illustration"
-                                    width={600}
-                                    height={400}
+                                    width={400}
+                                    height={200}
                                     className="object-cover"
                                     loading="lazy"
                                 />
@@ -89,7 +89,7 @@ const About = () => {
                             Menarik banget kan??
                         </h3>
                         <p className="text-white text-lg leading-relaxed">
-                             Apalagi program karuna ini dilaksanakan di Paguyuban Amanah Bersama yang berada di Desa Gunungronggo. Bukan cuma pelatihan ajaa, serunya lagii, hasil dari pelatihan ini nggak sekadar berhenti di teori aja, tapi langsung dipraktikkan! 
+                             Apalagi program karuna ini dilaksanakan di Paguyuban Amanah Bersama yang berada di Desa Gunungronggo. Bukan cuma pelatihan ajaa, serunya lagii, hasil dari pelatihan ini nggak sekadar berhenti di teori aja, tapi langsung dipraktikkan!
                         </p>
                         <p className="text-white text-lg leading-relaxed">
                             Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
