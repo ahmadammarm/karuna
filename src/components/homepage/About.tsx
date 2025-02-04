@@ -85,7 +85,7 @@ const About = () => {
                         data-aos="fade-left"
                         data-aos-duration="1000"
                     >
-                        <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 font-serif">
+                        <h3 className="text-2xl md:text-3xl font-black text-zinc-900 font-serif">
                             Menarik banget kan??
                         </h3>
                         <p className="text-white text-lg leading-relaxed font-semibold">
