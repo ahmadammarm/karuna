@@ -101,7 +101,7 @@ export default function Navbar() {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button
-                  className="w-14 h-14 rounded-md text-gray-400 hover:text-gray-500 bg-black/80 focus:ring-2 focus:ring-inset z-50 focus:ring-green-500"
+                  className="w-14 h-14 rounded-md text-gray-400 hover:text-gray-500 bg-black/80 border-green-900 focus:ring-2 focus:ring-inset z-50 focus:ring-green-500"
                 >
                   <Menu className="w-full" />
                 </Button>
