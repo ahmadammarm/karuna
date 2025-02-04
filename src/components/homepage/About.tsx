@@ -40,8 +40,8 @@ const About = () => {
         <div className="overflow-hidden bg-green-950">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
-                    className="text-white text-4xl md:text-5xl font-bold text-center mb-16 relative mt-24 md:mt-0"
-                    data-aos="fade-down"
+                    className="text-white text-4xl md:text-5xl font-bold text-center mb-16 relative mt-32 md:mt-0"
+                    data-aos="fade-up"
                     data-aos-duration="800"
                 >
                     Tentang Kami

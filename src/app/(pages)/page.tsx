@@ -23,7 +23,7 @@ export default function HomePage() {
         )
     }
     return (
-        <div>
+        <div className="bg-zinc-950">
             <Hero />
             <About />
             <Faq />
