@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { Footer } from "@/components/layout/Footer"
 
 // Data tim pengembang
 const teamMembers = {
@@ -155,6 +156,7 @@ export default function PengembangPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

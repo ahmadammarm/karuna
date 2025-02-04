@@ -9,6 +9,7 @@ import Loading from "@/components/layout/Loading"
 import Banner from "@/components/layout/Banner"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Footer } from "@/components/layout/Footer"
 
 export default function EduguPickPage() {
 
@@ -206,6 +207,7 @@ export default function EduguPickPage() {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   )
 }

@@ -3,6 +3,7 @@
 import About from "@/components/about/About";
 import Banner from "@/components/layout/Banner";
 import Contact from "@/components/layout/Contact";
+import { Footer } from "@/components/layout/Footer";
 import Loading from "@/components/layout/Loading";
 import { useState } from "react";
 
@@ -26,6 +27,7 @@ export default function AboutPage() {
             <Banner title="Tentang Kami" imageUrl="/aset-home/banner-1.jpeg" href="/" link="Beranda" subtitle="Tentang Kami"  />
             <About />
             <Contact />
+            <Footer />
         </div>
     )
 }

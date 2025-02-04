@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 import Loading from "@/components/layout/Loading"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Footer } from "@/components/layout/Footer"
 
 export default function AnimalExplorePage() {
 
@@ -119,6 +120,7 @@ export default function AnimalExplorePage() {
         <h3 className="text-2xl font-semibold mb-4" data-aos="fade-up">Dokumentasi Kegiatan</h3>
       </div>
     </div>
+    <Footer />
     </>
   )
 }

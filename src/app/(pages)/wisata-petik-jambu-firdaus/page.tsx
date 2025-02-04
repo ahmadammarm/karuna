@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { MapPin, Phone, Facebook, Instagram, Twitter } from "lucide-react"
+import { Footer } from "@/components/layout/Footer"
 
 export default function WisataPage() {
   const [isLoading, setIsLoading] = useState(true)
@@ -154,6 +155,7 @@ export default function WisataPage() {
           </CardContent>
         </Card>
       </div>
+      <Footer />
     </div>
   )
 }
