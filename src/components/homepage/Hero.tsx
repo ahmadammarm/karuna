@@ -88,13 +88,13 @@ export const Hero = () => {
                                     <h1
                                     className="text-white text-4xl lg:text-6xl font-bold cursor-default mt-14 mb-10 px-3 font-sans"
                                     >
-                                        {slide.title} <span className="text-green-600 font-sans">{slide.titleHighlight}</span>
+                                        {slide.title} <span className="text-lime-600 font-sans">{slide.titleHighlight}</span>
                                     </h1>
                                     <p className="text-white text-lg lg:text-xl leading-relaxed font-medium cursor-default px-3 font-sans">
                                         {slide.description}
                                     </p>
                                     <Link href={slide.buttonLink} className="px-3">
-                                        <Button className="px-8 py-3 bg-green-600 border-primary text-green-50 font-bold rounded-lg hover:bg-white hover:text-primary transition duration-300 mt-10">
+                                        <Button className="px-8 py-3 bg-lime-600 border-primary text-lime-50 font-bold rounded-lg hover:bg-white hover:text-primary transition duration-300 mt-10">
                                             {slide.buttonText}
                                         </Button>
                                     </Link>
@@ -108,13 +108,13 @@ export const Hero = () => {
             {/* Navigation buttons */}
             <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-green-600/50 p-2 rounded-full text-white hover:bg-green-600 transition-colors z-20"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-lime-600/50 p-2 rounded-full text-white hover:bg-lime-600 transition-colors z-20"
             >
                 <ChevronLeft size={24} />
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-green-600/50 p-2 rounded-full text-white hover:bg-green-600 transition-colors z-20"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-lime-600/50 p-2 rounded-full text-white hover:bg-lime-600 transition-colors z-20"
             >
                 <ChevronRight size={24} />
             </button>

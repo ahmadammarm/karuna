@@ -45,7 +45,7 @@ export const Faq = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="flex items-center justify-center" data-aos="fade-up">
-            <HelpCircle className="w-12 h-12 text-green-600 mt-20" />
+            <HelpCircle className="w-12 h-12 text-lime-600 mt-20" />
           </div>
           <h2 className="text-3xl font-bold text-white" data-aos="fade-up">
             Pertanyaan yang Sering Diajukan
@@ -53,7 +53,7 @@ export const Faq = () => {
           <p className="text-xl text-white max-w-2xl" data-aos="fade-up">
             Pertanyaan yang sering ditanyakan oleh pengunjung dan mungkin kamu juga menanyakannya.
           </p>
-          <div className="h-1 w-20 bg-green-600 rounded-full mt-2" data-aos="fade-up" />
+          <div className="h-1 w-20 bg-lime-600 rounded-full mt-2" data-aos="fade-up" />
         </div>
         <div className="mx-auto max-w-3xl mt-12" data-aos="fade-up">
           <Accordion
@@ -67,7 +67,7 @@ export const Faq = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index + 1}`}
-                className="border border-green-600 rounded-lg overflow-hidden shadow-sm"
+                className="border border-lime-600 rounded-lg overflow-hidden shadow-sm"
               >
                 <AccordionTrigger
                   className="flex justify-between items-center w-full p-4 text-left text-white hover:bg-zinc-900 transition-colors duration-200"

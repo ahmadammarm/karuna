@@ -19,7 +19,7 @@ export const Footer = () => {
                                 height={50}
                                 className="rounded-full"
                             />
-                            <div className="text-2xl font-bold text-green-500">
+                            <div className="text-2xl font-bold text-lime-500">
                                 Karuna
                             </div>
                         </div>
@@ -27,13 +27,13 @@ export const Footer = () => {
                             Program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Amanah Bersama dalam mengoptimalkan potensi Perkebunan Jambu di Dusun Gunungronggo.
                         </p>
                         <div className="flex gap-4 mt-6">
-                            <Link href="https://facebook.com" className="hover:text-green-500 transition-colors">
+                            <Link href="https://facebook.com" className="hover:text-lime-500 transition-colors">
                                 <Facebook className="w-6 h-6" />
                             </Link>
-                            <Link href="https://instagram.com" className="hover:text-green-500 transition-colors">
+                            <Link href="https://instagram.com" className="hover:text-lime-500 transition-colors">
                                 <Instagram className="w-6 h-6" />
                             </Link>
-                            <Link href="https://youtube.com" className="hover:text-green-500 transition-colors">
+                            <Link href="https://youtube.com" className="hover:text-lime-500 transition-colors">
                                 <Youtube className="w-6 h-6" />
                             </Link>
                         </div>
@@ -41,13 +41,13 @@ export const Footer = () => {
 
                     {/* Halaman Section */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold border-b border-green-500 pb-2 mb-4">Halaman</h3>
+                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4">Halaman</h3>
                         <ul className="space-y-2">
                             {['Beranda', 'Eco Edu', 'Eco Product', 'FAQ'].map((item) => (
                                 <li key={item}>
                                     <Link
                                         href={`/${item.toLowerCase().replace(' ', '-')}`}
-                                        className="text-gray-300 hover:text-green-500 transition-colors"
+                                        className="text-gray-300 hover:text-lime-500 transition-colors"
                                     >
                                         {item}
                                     </Link>
@@ -58,13 +58,13 @@ export const Footer = () => {
 
                     {/* Produk Section */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold border-b border-green-500 pb-2 mb-4">Produk</h3>
+                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4">Produk</h3>
                         <ul className="space-y-2">
                             {['Fashion', 'Pupuk Organik', 'Food and Beverage'].map((item) => (
                                 <li key={item}>
                                     <Link
                                         href={`/produk/${item.toLowerCase().replace(' ', '-')}`}
-                                        className="text-gray-300 hover:text-green-500 transition-colors"
+                                        className="text-gray-300 hover:text-lime-500 transition-colors"
                                     >
                                         {item}
                                     </Link>
@@ -75,13 +75,13 @@ export const Footer = () => {
 
                     {/* Informasi Section */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold border-b border-green-500 pb-2 mb-4">Informasi</h3>
+                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4">Informasi</h3>
                         <ul className="space-y-2">
                             {['Tentang Kami', 'Hubungi Kami', 'Tim Pengembang'].map((item) => (
                                 <li key={item}>
                                     <Link
                                         href={`/informasi/${item.toLowerCase().replace(' ', '-')}`}
-                                        className="text-gray-300 hover:text-green-500 transition-colors"
+                                        className="text-gray-300 hover:text-lime-500 transition-colors"
                                     >
                                         {item}
                                     </Link>
@@ -94,20 +94,20 @@ export const Footer = () => {
                 {/* Map and Contact Section */}
                 <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold border-b border-green-500 pb-2 mb-4">Alamat</h3>
+                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4">Alamat</h3>
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
-                                <MapPin className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                                <MapPin className="w-5 h-5 text-lime-500 flex-shrink-0 mt-1" />
                                 <p className="text-gray-300">
                                     Dusun Gunungronggo, Kecamatan Tajinan, Kabupaten Malang, Jawa Timur
                                 </p>
                             </div>
                             <div className="flex items-center gap-3">
-                                <Phone className="w-5 h-5 text-green-500" />
+                                <Phone className="w-5 h-5 text-lime-500" />
                                 <p className="text-gray-300">+62 812-3456-7890</p>
                             </div>
                             <div className="flex items-center gap-3">
-                                <Mail className="w-5 h-5 text-green-500" />
+                                <Mail className="w-5 h-5 text-lime-500" />
                                 <p className="text-gray-300">contact@karuna.com</p>
                             </div>
                         </div>

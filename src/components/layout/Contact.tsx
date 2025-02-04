@@ -25,7 +25,7 @@ const Contact = () => {
                         Ingin bertanya lebih lanjut tentang Program Karuna? Yuk hubungi Minkar!!
                     </p>
                     <div className="flex items-center justify-center mt-5" data-aos="fade-up">
-                        <Link href="/contact" className="text-lg font-bold px-4 py-2 rounded-lg bg-green-700 text-white hover:opacity-75 transition-all ease-in-out duration-200">
+                        <Link href="/contact" className="text-lg font-bold px-4 py-2 rounded-lg bg-lime-700 text-white hover:opacity-75 transition-all ease-in-out duration-200">
                             Admin Karuna
                         </Link>
                     </div>

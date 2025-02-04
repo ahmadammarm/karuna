@@ -52,7 +52,7 @@ export default function Navbar() {
   }, [isMobile, isOpen])
 
   return (
-    <nav className="bg-black/80 shadow-md py-2 px-2 md:px-0 fixed w-full z-50 border-b border-green-900">
+    <nav className="bg-black/80 shadow-md py-2 px-2 md:px-0 fixed w-full z-50 border-b border-lime-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -67,7 +67,7 @@ export default function Navbar() {
               <div key={item.href} className="relative group">
                 {item.dropdown ? (
                   <>
-                    <button className="flex items-center text-white hover:text-green-400 text-md font-bold focus:outline-none">
+                    <button className="flex items-center text-white hover:text-lime-400 text-md font-bold focus:outline-none">
                       {item.label} <ChevronDown className="ml-1 w-5 h-5" />
                     </button>
                     <div className="absolute mt-2 bg-black/80 shadow-lg rounded-md w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
@@ -75,7 +75,7 @@ export default function Navbar() {
                         <Link
                           key={dropdownItem.href}
                           href={dropdownItem.href}
-                          className="block px-4 py-2 text-white hover:bg-green-900/50"
+                          className="block px-4 py-2 text-white hover:bg-lime-800/50"
                         >
                           {dropdownItem.label}
                         </Link>
@@ -86,7 +86,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     className={`${
-                      pathname === item.href ? "text-green-400" : "text-white hover:text-green-400"
+                      pathname === item.href ? "text-lime-400" : "text-white hover:text-lime-400"
                     } text-md font-bold`}
                   >
                     {item.label}
@@ -101,7 +101,7 @@ export default function Navbar() {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button
-                  className="w-14 h-14 rounded-md text-gray-400 hover:text-gray-500 bg-black/80 border border-green-900 focus:ring-2 focus:ring-inset z-50 focus:ring-green-500"
+                  className="w-14 h-14 rounded-md text-gray-400 hover:text-gray-500 bg-black/80 border border-lime-700 focus:ring-2 focus:ring-inset z-50 focus:ring-lime-700"
                 >
                   <Menu className="w-full" />
                 </Button>
@@ -118,7 +118,7 @@ export default function Navbar() {
                               onClick={() =>
                                 setIsDropdownOpen((prev) => ({ ...prev, [item.label]: !prev[item.label] }))
                               }
-                              className="w-full text-left text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-lg font-medium flex justify-between"
+                              className="w-full text-left text-gray-700 hover:text-lime-700 px-3 py-2 rounded-md text-lg font-medium flex justify-between"
                             >
                               {item.label} <ChevronDown className="w-5 h-5" />
                             </button>
@@ -142,8 +142,8 @@ export default function Navbar() {
                             href={item.href}
                             className={`${
                               pathname === item.href
-                                ? "text-green-600"
-                                : "text-gray-700 hover:text-green-600 hover:bg-gray-50"
+                                ? "text-lime-700"
+                                : "text-gray-700 hover:text-lime-700 hover:bg-gray-50"
                             } block px-3 py-2 rounded-md text-lg font-medium`}
                             onClick={() => setIsOpen(false)}
                           >

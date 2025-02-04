@@ -37,7 +37,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className="overflow-hidden bg-green-950">
+        <div className="overflow-hidden bg-lime-800">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
                     className="text-white text-4xl md:text-5xl font-bold text-center mb-16 relative mt-32 md:mt-0"
@@ -57,11 +57,11 @@ const About = () => {
                             {/* <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-black font-serif">
                                 Seputar
                                 <br />
-                                <span className="text-green-900 relative font-serif">
+                                <span className="text-lime-900 relative font-serif">
                                     Karuna
                                 </span>
                             </h2> */}
-                            <p className="text-white mb-8 text-lg relative z-10">
+                            <p className="text-white mb-8 text-lg relative z-10 font-semibold">
                                 Hai Karuners! Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh!
                             </p>
                             <div
@@ -85,13 +85,13 @@ const About = () => {
                         data-aos="fade-left"
                         data-aos-duration="1000"
                     >
-                        <h3 className="text-2xl md:text-3xl font-bold text-green-300 font-serif">
+                        <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 font-serif">
                             Menarik banget kan??
                         </h3>
-                        <p className="text-white text-lg leading-relaxed">
+                        <p className="text-white text-lg leading-relaxed font-semibold">
                              Apalagi program karuna ini dilaksanakan di Paguyuban Amanah Bersama yang berada di Desa Gunungronggo. Bukan cuma pelatihan ajaa, serunya lagii, hasil dari pelatihan ini nggak sekadar berhenti di teori aja, tapi langsung dipraktikkan!
                         </p>
-                        <p className="text-white text-lg leading-relaxed">
+                        <p className="text-white text-lg leading-relaxed font-semibold">
                             Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
                         </p>
                         <div
@@ -192,7 +192,7 @@ const About = () => {
                                             />
                                         </div>
                                         <CardContent className="p-4 text-center">
-                                            <CardTitle className="text-lg font-bold mb-2 text-green-700">
+                                            <CardTitle className="text-lg font-bold mb-2 text-lime-700">
                                                 {item.title}
                                             </CardTitle>
                                             <p className="text-sm text-gray-600 mb-3">
@@ -206,7 +206,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-green-950 py-16 md:py-24 px-10 md:px-14">
+                <div className="bg-lime-800 py-16 md:py-24 px-10 md:px-14">
                     <div>
                         <h2
                             className="text-4xl md:text-5xl font-bold text-center mb-16 text-white relative mt-10"
@@ -254,7 +254,7 @@ const About = () => {
                                         />
                                     </div>
                                     <div className="mt-16 text-center mb-10 px-4">
-                                        <h3 className="text-2xl font-bold text-green-700">
+                                        <h3 className="text-2xl font-bold text-lime-700">
                                             {item.nama}
                                         </h3>
                                         <p className="text-white mt-4 mb-8">
@@ -262,7 +262,7 @@ const About = () => {
                                         </p>
                                         <Link
                                             href={item.href}
-                                            className="text-lg font-bold px-4 py-2 rounded-lg bg-green-700 text-white hover:opacity-75 transition-all ease-in-out duration-200"
+                                            className="text-lg font-bold px-4 py-2 rounded-lg bg-lime-700 text-white hover:opacity-75 transition-all ease-in-out duration-200"
                                         >
                                             Jelajahi
                                         </Link>
