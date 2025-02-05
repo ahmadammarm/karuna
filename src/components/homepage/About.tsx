@@ -37,7 +37,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className="overflow-hidden bg-lime-600">
+        <div className="overflow-hidden bg-lime-500">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
                     className="text-black text-4xl md:text-5xl font-bold text-center mb-16 relative mt-32 md:mt-0"
@@ -53,7 +53,7 @@ const About = () => {
                         data-aos="fade-right"
                         data-aos-duration="1000"
                     >
-                        <div className="bg-[#321007] rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
+                        <div className="bg-[#1b0000] rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
                             {/* <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-black font-serif">
                                 Seputar
                                 <br />
@@ -85,7 +85,7 @@ const About = () => {
                         data-aos="fade-left"
                         data-aos-duration="1000"
                     >
-                        <h3 className="text-2xl md:text-3xl font-black text-[#321007] font-serif">
+                        <h3 className="text-2xl md:text-3xl font-black text-[#1b0000] font-serif">
                             Menarik banget kan??
                         </h3>
                         <p className="text-black text-lg leading-relaxed font-bold">
@@ -95,7 +95,7 @@ const About = () => {
                             Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
                         </p>
                         <div
-                            className="flex items-center space-x-4 mt-4 bg-[#321007] rounded-lg"
+                            className="flex items-center space-x-4 mt-4 bg-[#1b0000] rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >
@@ -103,7 +103,7 @@ const About = () => {
                             <span className="text-white font-bold text-xl text-center">Pemberdayaan Masyarakat</span>
                         </div>
                         <div
-                            className="flex items-center space-x-4 bg-[#321007] rounded-lg"
+                            className="flex items-center space-x-4 bg-[#1b0000] rounded-lg"
                             data-aos="fade-up"
                             data-aos-delay="200"
                         >
@@ -130,7 +130,7 @@ const About = () => {
                         backgroundAttachment: 'fixed'
                     }}
                 >
-                    <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                    <div className="absolute inset-0 bg-black bg-opacity-80"></div>
                     <div className="relative z-10">
                         <h2
                             className="text-4xl md:text-5xl font-bold text-center text-white relative mt-10"
@@ -180,7 +180,7 @@ const About = () => {
                                     data-aos-delay={index * 150}
                                     data-aos-anchor-placement="top-bottom"
                                 >
-                                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-gray-100">
                                         <div className="relative h-48">
                                             <Image
                                                 src={item.imageUrl}
@@ -192,7 +192,7 @@ const About = () => {
                                             />
                                         </div>
                                         <CardContent className="p-4 text-center">
-                                            <CardTitle className="text-lg font-bold mb-2 text-lime-700">
+                                            <CardTitle className="text-lg font-bold mb-2 text-lime-500">
                                                 {item.title}
                                             </CardTitle>
                                             <p className="text-sm text-gray-600 mb-3">
@@ -206,7 +206,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-lime-600 py-16 md:py-24 px-10 md:px-14">
+                <div className="bg-lime-500 py-16 md:py-24 px-10 md:px-14">
                     <div>
                         <h2
                             className="text-4xl md:text-5xl font-bold text-center mb-16 text-black relative mt-10"
@@ -214,7 +214,7 @@ const About = () => {
                         >
                             Produk Kami
                         </h2>
-                        <p className="text-center text-[#321007] mt-5 mb-16" data-aos="fade-up">
+                        <p className="text-center text-[#1b0000] mt-5 mb-16" data-aos="fade-up">
                             Gimana, penasaran kan sama produk dari Karuna?
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
@@ -239,7 +239,7 @@ const About = () => {
                                 },
                             ].map((item, index) => (
                                 <Card key={index}
-                                    className="relative flex flex-col items-center pt-16 bg-[#321007] border-none mb-10 mt-10"
+                                    className="relative flex flex-col items-center pt-16 bg-[#1b0000] border-none mb-10 mt-10"
                                     data-aos="fade-up"
                                     data-aos-delay={index * 150}
                                     data-aos-anchor-placement="top-bottom"
@@ -254,7 +254,7 @@ const About = () => {
                                         />
                                     </div>
                                     <div className="mt-16 text-center mb-10 px-4">
-                                        <h3 className="text-2xl font-bold text-lime-700">
+                                        <h3 className="text-2xl font-bold text-lime-500">
                                             {item.nama}
                                         </h3>
                                         <p className="text-white mt-4 mb-8">
@@ -262,7 +262,7 @@ const About = () => {
                                         </p>
                                         <Link
                                             href={item.href}
-                                            className="text-lg font-bold px-4 py-2 rounded-lg bg-lime-700 text-white hover:opacity-75 transition-all ease-in-out duration-200"
+                                            className="text-lg font-bold px-4 py-2 rounded-lg bg-lime-500 text-white hover:opacity-75 transition-all ease-in-out duration-200"
                                         >
                                             Jelajahi
                                         </Link>

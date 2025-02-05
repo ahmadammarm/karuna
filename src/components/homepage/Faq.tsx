@@ -41,19 +41,19 @@ export const Faq = () => {
   ]
 
   return (
-    <section className="w-full pb-20 bg-[#321007]">
+    <section className="w-full pb-20 bg-lime-500">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="flex items-center justify-center" data-aos="fade-up">
-            <HelpCircle className="w-12 h-12 text-lime-600 mt-20" />
+            <HelpCircle className="w-12 h-12 text-[#321007] mt-20" />
           </div>
-          <h2 className="text-3xl font-bold text-white" data-aos="fade-up">
+          <h2 className="text-3xl font-bold text-black" data-aos="fade-up">
             Pertanyaan yang Sering Diajukan
           </h2>
-          <p className="text-xl text-white max-w-2xl" data-aos="fade-up">
+          <p className="text-xl text-lime-950 max-w-2xl" data-aos="fade-up">
             Pertanyaan yang sering ditanyakan oleh pengunjung dan mungkin kamu juga menanyakannya.
           </p>
-          <div className="h-1 w-20 bg-lime-600 rounded-full mt-2" data-aos="fade-up" />
+          <div className="h-1 w-20 bg-[#321007] rounded-full mt-2" data-aos="fade-up" />
         </div>
         <div className="mx-auto max-w-3xl mt-12" data-aos="fade-up">
           <Accordion
@@ -67,10 +67,10 @@ export const Faq = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index + 1}`}
-                className="border border-lime-600 rounded-lg overflow-hidden shadow-sm"
+                className="border border-lime-500 rounded-lg overflow-hidden shadow-sm"
               >
                 <AccordionTrigger
-                  className="flex justify-between items-center w-full p-4 text-left text-white hover:bg-[#321007] transition-colors duration-200"
+                  className="flex justify-between items-center w-full p-4 text-left text-lime-500 bg-[#321007] hover:bg-[#4a1a0a] transition-colors duration-200"
                   onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? undefined : `item-${index + 1}`)}
                 >
                   <span className="font-semibold text-lg">{item.question}</span>
@@ -79,7 +79,7 @@ export const Faq = () => {
                   {activeItem === `item-${index + 1}` && (
                     <AccordionContent className="p-4 bg-[#321007]" forceMount>
                       <div>
-                        <p className="text-gray-300">{item.answer}</p>
+                        <p className="text-lime-400">{item.answer}</p>
                       </div>
                     </AccordionContent>
                   )}
