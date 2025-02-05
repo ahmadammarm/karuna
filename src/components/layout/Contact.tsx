@@ -12,11 +12,11 @@ const Contact = () => {
                     backgroundAttachment: 'fixed'
                 }}
             >
-                <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-70"></div>
                 <div className="relative z-10">
                     <h2
                         className="text-4xl md:text-5xl font-bold text-center text-white relative mt-10"
-                        
+
                     >
                         Hubungi Kami
                     </h2>
