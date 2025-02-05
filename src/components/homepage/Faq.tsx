@@ -47,10 +47,10 @@ export const Faq = () => {
           <div className="flex items-center justify-center" data-aos="fade-up">
             <HelpCircle className="w-12 h-12 text-[#321007] mt-20" />
           </div>
-          <h2 className="text-3xl font-bold text-black" data-aos="fade-up">
+          <h2 className="text-3xl font-bold text-black font-poppins" data-aos="fade-up">
             Pertanyaan yang Sering Diajukan
           </h2>
-          <p className="text-xl text-lime-950 max-w-2xl" data-aos="fade-up">
+          <p className="text-xl text-lime-950 max-w-2xl font-poppins" data-aos="fade-up">
             Pertanyaan yang sering ditanyakan oleh pengunjung dan mungkin kamu juga menanyakannya.
           </p>
           <div className="h-1 w-20 bg-[#321007] rounded-full mt-2" data-aos="fade-up" />
@@ -67,19 +67,19 @@ export const Faq = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index + 1}`}
-                className="border border-lime-500 rounded-lg overflow-hidden shadow-sm"
+                className="border border-lime-500 rounded-lg overflow-hidden shadow-sm font-poppins"
               >
                 <AccordionTrigger
                   className="flex justify-between items-center w-full p-4 text-left text-lime-500 bg-[#321007] hover:bg-[#4a1a0a] transition-colors duration-200"
                   onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? undefined : `item-${index + 1}`)}
                 >
-                  <span className="font-semibold text-lg">{item.question}</span>
+                  <span className="font-semibold text-lg font-popins">{item.question}</span>
                 </AccordionTrigger>
                 <AnimatePresence>
                   {activeItem === `item-${index + 1}` && (
                     <AccordionContent className="p-4 bg-[#321007]" forceMount>
                       <div>
-                        <p className="text-lime-400">{item.answer}</p>
+                        <p className="text-lime-400 font-poppins">{item.answer}</p>
                       </div>
                     </AccordionContent>
                   )}

@@ -67,7 +67,7 @@ export default function Navbar() {
               <div key={item.href} className="relative group">
                 {item.dropdown ? (
                   <>
-                    <button className="flex items-center text-white hover:text-lime-400 text-md font-bold focus:outline-none">
+                    <button className="flex items-center text-white hover:text-lime-400 text-md font-bold focus:outline-none font-poppins">
                       {item.label} <ChevronDown className="ml-1 w-5 h-5" />
                     </button>
                     <div className="absolute mt-2 bg-black/80 shadow-lg rounded-md w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
@@ -75,7 +75,7 @@ export default function Navbar() {
                         <Link
                           key={dropdownItem.href}
                           href={dropdownItem.href}
-                          className="block px-4 py-2 text-white hover:bg-lime-800/50"
+                          className="block px-4 py-2 text-white hover:bg-lime-800/50 font-poppins"
                         >
                           {dropdownItem.label}
                         </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
                     href={item.href}
                     className={`${
                       pathname === item.href ? "text-lime-400" : "text-white hover:text-lime-400"
-                    } text-md font-bold`}
+                    } text-md font-bold font-poppins`}
                   >
                     {item.label}
                   </Link>
@@ -108,7 +108,7 @@ export default function Navbar() {
               </SheetTrigger>
               <SheetContent side="right" className="w-64">
                 <div className="pt-5 pb-4">
-                  <div className="text-xl font-bold text-gray-800 px-4">Menu</div>
+                  <div className="text-2xl font-bold text-gray-800 px-4 font-poppins">Menu</div>
                   <div className="mt-6 px-2 space-y-1">
                     {navItems.map((item) => (
                       <div key={item.href}>
@@ -118,7 +118,7 @@ export default function Navbar() {
                               onClick={() =>
                                 setIsDropdownOpen((prev) => ({ ...prev, [item.label]: !prev[item.label] }))
                               }
-                              className="w-full text-left text-gray-700 hover:text-lime-700 px-3 py-2 rounded-md text-lg font-medium flex justify-between"
+                              className="w-full text-left text-gray-700 hover:text-lime-700 px-3 py-2 rounded-md text-lg font-semibold flex justify-between font-poppins"
                             >
                               {item.label} <ChevronDown className="w-5 h-5" />
                             </button>
@@ -128,7 +128,7 @@ export default function Navbar() {
                                   <Link
                                     key={dropdownItem.href}
                                     href={dropdownItem.href}
-                                    className="block px-3 py-2 text-gray-700 hover:bg-gray-50"
+                                    className="block px-3 py-2 text-gray-700 hover:bg-gray-50 font-poppins font-semibold"
                                     onClick={() => setIsOpen(false)}
                                   >
                                     {dropdownItem.label}
@@ -144,7 +144,7 @@ export default function Navbar() {
                               pathname === item.href
                                 ? "text-lime-700"
                                 : "text-gray-700 hover:text-lime-700 hover:bg-gray-50"
-                            } block px-3 py-2 rounded-md text-lg font-medium`}
+                            } block px-3 py-2 rounded-md text-lg font-semibold font-poppins`}
                             onClick={() => setIsOpen(false)}
                           >
                             {item.label}

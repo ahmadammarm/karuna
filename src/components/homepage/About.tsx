@@ -40,7 +40,7 @@ const About = () => {
         <div className="overflow-hidden bg-lime-500">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
-                    className="text-black text-4xl md:text-5xl font-bold text-center mb-16 relative mt-32 md:mt-0"
+                    className="text-black text-4xl md:text-5xl font-bold text-center mb-16 relative mt-32 md:mt-0 font-poppins"
                     data-aos="fade-up"
                     data-aos-duration="800"
                 >
@@ -61,7 +61,7 @@ const About = () => {
                                     Karuna
                                 </span>
                             </h2> */}
-                            <p className="text-white mb-8 text-lg relative z-10 font-semibold">
+                            <p className="text-white mb-8 text-lg relative z-10 font-poppins">
                                 Hai Karuners! Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh!
                             </p>
                             <div
@@ -85,13 +85,13 @@ const About = () => {
                         data-aos="fade-left"
                         data-aos-duration="1000"
                     >
-                        <h3 className="text-2xl md:text-3xl font-black text-[#1b0000] font-serif">
+                        <h3 className="text-2xl md:text-3xl font-black text-[#1b0000] font-poppins">
                             Menarik banget kan??
                         </h3>
-                        <p className="text-black text-lg leading-relaxed font-bold">
+                        <p className="text-black text-lg leading-relaxed font-poppins">
                              Apalagi program karuna ini dilaksanakan di Paguyuban Amanah Bersama yang berada di Desa Gunungronggo. Bukan cuma pelatihan ajaa, serunya lagii, hasil dari pelatihan ini nggak sekadar berhenti di teori aja, tapi langsung dipraktikkan!
                         </p>
-                        <p className="text-black text-lg leading-relaxed font-bold">
+                        <p className="text-black text-lg leading-relaxed font-poppins">
                             Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
                         </p>
                         <div
@@ -100,7 +100,7 @@ const About = () => {
                             data-aos-delay="100"
                         >
                             <Image src="/aset-home/2.png" alt="masyarakat" width={180} height={40} />
-                            <span className="text-white font-bold text-xl text-center">Pemberdayaan Masyarakat</span>
+                            <span className="text-white font-semibold text-xl text-center font-poppins">Pemberdayaan Masyarakat</span>
                         </div>
                         <div
                             className="flex items-center space-x-4 bg-[#1b0000] rounded-lg"
@@ -108,17 +108,9 @@ const About = () => {
                             data-aos-delay="200"
                         >
                             <Image src="/aset-home/3.png" alt="produk" width={180} height={40} />
-                            <span className="text-white font-bold text-xl text-center">Inovasi Produk Lokal</span>
+                            <span className="text-white font-semibold text-xl text-center font-poppins">Inovasi Produk Lokal</span>
                         </div>
                         <Separator className="my-12 md:my-0" />
-                        <div className="p-3 bg-white rounded-lg w-[80%]" data-aos="fade-up" data-aos-delay="300">
-                            <Image
-                                alt="logo um"
-                                src="/aset-home/logo-um.png"
-                                width={450}
-                                height={100}
-                            />
-                        </div>
                     </div>
                 </div>
 
@@ -133,13 +125,13 @@ const About = () => {
                     <div className="absolute inset-0 bg-black bg-opacity-70"></div>
                     <div className="relative z-10">
                         <h2
-                            className="text-4xl md:text-5xl font-bold text-center text-white relative mt-10"
+                            className="text-4xl md:text-5xl text-center text-white relative mt-10 font-poppins font-bold"
                             data-aos="fade-up"
                         >
                             Galeri
                         </h2>
 
-                        <p className="text-center text-white mt-5 mb-16" data-aos="fade-up">
+                        <p className="text-center text-white mt-5 mb-16 font-poppins" data-aos="fade-up">
                             Yuk kepoin kegiatan-kegiatan seru di Program Karuna
                         </p>
 
@@ -192,10 +184,10 @@ const About = () => {
                                             />
                                         </div>
                                         <CardContent className="p-4 text-center">
-                                            <CardTitle className="text-lg font-bold mb-2 text-lime-500">
+                                            <CardTitle className="text-lg font-bold mb-2 text-lime-600 font-poppins">
                                                 {item.title}
                                             </CardTitle>
-                                            <p className="text-sm text-gray-600 mb-3">
+                                            <p className="text-sm text-gray-600 mb-3 font-poppins">
                                                 {item.description}
                                             </p>
                                         </CardContent>
@@ -209,12 +201,12 @@ const About = () => {
                 <div className="bg-lime-500 py-16 md:py-24 px-10 md:px-14">
                     <div>
                         <h2
-                            className="text-4xl md:text-5xl font-bold text-center mb-16 text-black relative mt-10"
+                            className="text-4xl md:text-5xl font-bold text-center mb-16 text-black relative mt-10 font-poppins"
                             data-aos="fade-up"
                         >
                             Produk Kami
                         </h2>
-                        <p className="text-center text-[#1b0000] mt-5 mb-16" data-aos="fade-up">
+                        <p className="text-center text-[#1b0000] mt-5 mb-16 font-poppins font-semibold" data-aos="fade-up">
                             Gimana, penasaran kan sama produk dari Karuna?
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
@@ -254,15 +246,15 @@ const About = () => {
                                         />
                                     </div>
                                     <div className="mt-16 text-center mb-10 px-4">
-                                        <h3 className="text-2xl font-bold text-lime-500">
+                                        <h3 className="text-2xl font-bold text-lime-500 font-poppins">
                                             {item.nama}
                                         </h3>
-                                        <p className="text-white mt-4 mb-8">
+                                        <p className="text-white mt-4 mb-8 font-poppins">
                                             {item.deskripsi}
                                         </p>
                                         <Link
                                             href={item.href}
-                                            className="text-lg font-bold px-4 py-2 rounded-lg bg-lime-500 text-white hover:opacity-75 transition-all ease-in-out duration-200"
+                                            className="text-lg font-bold px-4 py-2 rounded-lg bg-lime-700 text-white hover:opacity-75 transition-all ease-in-out duration-200 font-poppins"
                                         >
                                             Jelajahi
                                         </Link>

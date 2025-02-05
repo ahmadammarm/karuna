@@ -11,19 +11,17 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                     {/* Logo and Description Section */}
                     <div className="lg:col-span-2 space-y-4">
-                        <div className="flex items-center gap-2">
-                            <Image
-                                src="/logo-white.png"
-                                alt="Karuna"
-                                width={50}
-                                height={50}
-                                className="rounded-full"
-                            />
-                            <div className="text-2xl font-bold text-lime-500">
-                                Karuna
+                        <div className="flex items-center justify-center md:justify-start mb-10">
+                            <div className="p-3 bg-white rounded-lg w-[80%]">
+                                <Image
+                                    alt="logo um"
+                                    src="/aset-home/logo-um.png"
+                                    width={450}
+                                    height={100}
+                                />
                             </div>
                         </div>
-                        <p className="text-gray-300 mt-4 max-w-md">
+                        <p className="text-gray-300 mt-4 max-w-md font-poppins">
                             Program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Amanah Bersama dalam mengoptimalkan potensi Perkebunan Jambu di Dusun Gunungronggo.
                         </p>
                         <div className="flex gap-4 mt-6">
@@ -41,13 +39,13 @@ export const Footer = () => {
 
                     {/* Halaman Section */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4">Halaman</h3>
+                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4 font-poppins">Halaman</h3>
                         <ul className="space-y-2">
                             {['Beranda', 'Eco Edu', 'Eco Product', 'FAQ'].map((item) => (
                                 <li key={item}>
                                     <Link
                                         href={`/${item.toLowerCase().replace(' ', '-')}`}
-                                        className="text-gray-300 hover:text-lime-500 transition-colors"
+                                        className="text-gray-300 hover:text-lime-500 transition-colors font-poppins"
                                     >
                                         {item}
                                     </Link>
@@ -64,7 +62,7 @@ export const Footer = () => {
                                 <li key={item}>
                                     <Link
                                         href={`/produk/${item.toLowerCase().replace(' ', '-')}`}
-                                        className="text-gray-300 hover:text-lime-500 transition-colors"
+                                        className="text-gray-300 hover:text-lime-500 transition-colors font-poppins"
                                     >
                                         {item}
                                     </Link>
@@ -75,13 +73,13 @@ export const Footer = () => {
 
                     {/* Informasi Section */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4">Informasi</h3>
+                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4 font-poppins">Informasi</h3>
                         <ul className="space-y-2">
                             {['Tentang Kami', 'Hubungi Kami', 'Tim Pengembang'].map((item) => (
                                 <li key={item}>
                                     <Link
                                         href={`/informasi/${item.toLowerCase().replace(' ', '-')}`}
-                                        className="text-gray-300 hover:text-lime-500 transition-colors"
+                                        className="text-gray-300 hover:text-lime-500 transition-colors font-poppins"
                                     >
                                         {item}
                                     </Link>
@@ -94,21 +92,21 @@ export const Footer = () => {
                 {/* Map and Contact Section */}
                 <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4">Alamat</h3>
+                        <h3 className="text-lg font-semibold border-b border-lime-500 pb-2 mb-4 font-poppins">Alamat</h3>
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-lime-500 flex-shrink-0 mt-1" />
-                                <p className="text-gray-300">
+                                <p className="text-gray-300 font-poppins">
                                     Dusun Gunungronggo, Kecamatan Tajinan, Kabupaten Malang, Jawa Timur
                                 </p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-lime-500" />
-                                <p className="text-gray-300">+62 812-3456-7890</p>
+                                <p className="text-gray-300 font-poppins">+62 812-3456-7890</p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-lime-500" />
-                                <p className="text-gray-300">contact@karuna.com</p>
+                                <p className="text-gray-300 font-poppins">contact@karuna.com</p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +125,7 @@ export const Footer = () => {
 
                 {/* Copyright Section */}
                 <div className="mt-12 pt-8 border-t border-gray-800">
-                    <p className="text-center text-gray-400">
+                    <p className="text-center text-gray-400 font-poppins">
                         © {new Date().getFullYear()} Program Karuna. All rights reserved.
                     </p>
                 </div>

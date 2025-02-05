@@ -14,7 +14,7 @@ export const Hero = () => {
             image: "/aset-home/banner-3.jpg",
             title: "Selamat datang di",
             titleHighlight: "Program Karuna",
-            description: "Optimalisasi Wisata Petik Jambu sebagai Eco-eduwisata Melalui Peningkatan Entrepreneur Skills Berbasis Community-Based Inclusive Development dengan Pemberdayaan Paguyuban Disabilitas",
+            description: "Peningkatan Entrepreneur Skills Berbasis Community-Based Inclusive Development dengan Pemberdayaan Paguyuban Disabilitas",
             buttonText: "Selengkapnya",
             buttonLink: "/about",
             imageUrl: "/aset-home/banner-3-copy.jpg",
@@ -86,15 +86,15 @@ export const Hero = () => {
                                 </div>
                                 <div className="text-center lg:text-left space-y-4 pl-0 md:pl-8 order-2 md:order-1">
                                     <h1
-                                    className="text-white text-4xl lg:text-6xl font-bold cursor-default mt-14 mb-10 px-3 font-sans"
+                                    className="text-white text-4xl lg:text-5xl font-bold cursor-default mt-14 mb-10 px-3 font-poppins"
                                     >
-                                        {slide.title} <span className="text-lime-600 font-sans">{slide.titleHighlight}</span>
+                                        {slide.title} <span className="text-lime-600 font-poppins">{slide.titleHighlight}</span>
                                     </h1>
-                                    <p className="text-white text-lg lg:text-xl leading-relaxed font-medium cursor-default px-3 font-sans">
+                                    <p className="text-white text-lg lg:text-xl leading-relaxed font-medium cursor-default px-3 font-poppins">
                                         {slide.description}
                                     </p>
                                     <Link href={slide.buttonLink} className="px-3">
-                                        <Button className="px-8 py-3 bg-lime-600 border-primary text-lime-50 font-bold rounded-lg hover:bg-white hover:text-primary transition duration-300 mt-10">
+                                        <Button className="px-8 py-4 bg-lime-600 border-primary text-lime-50 font-semibold rounded-lg hover:bg-white hover:text-primary transition duration-300 mt-10 font-poppins">
                                             {slide.buttonText}
                                         </Button>
                                     </Link>
