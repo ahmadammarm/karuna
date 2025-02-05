@@ -70,7 +70,7 @@ export const Faq = () => {
                 className="border border-lime-500 rounded-lg overflow-hidden shadow-sm font-poppins"
               >
                 <AccordionTrigger
-                  className="flex justify-between items-center w-full p-4 text-left text-lime-500 bg-[#321007] hover:bg-[#4a1a0a] transition-colors duration-200"
+                  className="flex justify-between items-center w-full p-4 text-left text-white bg-[#321007] hover:bg-[#4a1a0a] transition-colors duration-200"
                   onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? undefined : `item-${index + 1}`)}
                 >
                   <span className="font-semibold text-lg font-popins">{item.question}</span>
