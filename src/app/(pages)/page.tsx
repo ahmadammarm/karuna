@@ -24,7 +24,7 @@ export default function HomePage() {
         )
     }
     return (
-        <div className="bg-zinc-950">
+        <div className="bg-black">
             <Hero />
             <About />
             <Faq />

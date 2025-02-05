@@ -79,7 +79,7 @@ export const Faq = () => {
                   {activeItem === `item-${index + 1}` && (
                     <AccordionContent className="p-4 bg-[#321007]" forceMount>
                       <div>
-                        <p className="text-lime-400 font-poppins">{item.answer}</p>
+                        <p className="text-white font-poppins">{item.answer}</p>
                       </div>
                     </AccordionContent>
                   )}

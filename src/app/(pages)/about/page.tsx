@@ -24,7 +24,7 @@ export default function AboutPage() {
 
     return (
         <div>
-            <Banner title="Tentang Kami" imageUrl="/aset-home/banner-1.jpeg" href="/" link="Beranda" subtitle="Tentang Kami"  />
+            <Banner title="Tentang Kami" imageUrl="/aset-home/banner-3.jpg" href="/" link="Beranda" subtitle="Tentang Kami"  />
             <About />
             <Contact />
             <Footer />

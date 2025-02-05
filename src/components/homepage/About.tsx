@@ -72,8 +72,8 @@ const About = () => {
                                 <Image
                                     src="/aset-home/about.png"
                                     alt="Program Karuna Illustration"
-                                    width={400}
-                                    height={200}
+                                    width={300}
+                                    height={100}
                                     className="object-cover"
                                     loading="lazy"
                                 />
@@ -110,7 +110,7 @@ const About = () => {
                             <Image src="/aset-home/3.png" alt="produk" width={180} height={40} />
                             <span className="text-white font-semibold text-xl text-center font-poppins">Inovasi Produk Lokal</span>
                         </div>
-                        <Separator className="my-12 md:my-0" />
+                        {/* <Separator className="my-12 md:my-0" /> */}
                     </div>
                 </div>
 
@@ -130,10 +130,6 @@ const About = () => {
                         >
                             Galeri
                         </h2>
-
-                        <p className="text-center text-white mt-5 mb-16 font-poppins" data-aos="fade-up">
-                            Yuk kepoin kegiatan-kegiatan seru di Program Karuna
-                        </p>
 
                         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                             {[
