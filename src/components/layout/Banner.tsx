@@ -14,7 +14,7 @@ const Banner: React.FC<BannerProps> = ({
 }) => {
   return (
     <div className="relative w-full h-[500px] md:h-[500px] lg:h-[600px] overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full parallax" style={{
+        <div className="w-full min-h-screen flex items-center pt-12 bg-cover bg-center relative py-14" style={{
             backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundAttachment: 'fixed'
         }}>
             <div className="absolute inset-0 bg-black opacity-80"></div>
