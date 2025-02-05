@@ -3,7 +3,6 @@
 import { useEffect } from 'react'
 import Image from "next/image"
 import { Card, CardContent, CardTitle } from "../ui/card"
-import { Separator } from '../ui/separator'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Link from 'next/link';

@@ -2,11 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Image from "next/image"
-import { Card, CardContent, CardTitle } from "../ui/card"
+import { Card } from "../ui/card"
 // import { Separator } from '../ui/separator'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion'
 import { AnimatePresence } from 'framer-motion'
 
