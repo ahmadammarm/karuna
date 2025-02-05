@@ -11,9 +11,6 @@ interface BannerProps {
 const Banner: React.FC<BannerProps> = ({
     title,
     imageUrl,
-    href,
-    link,
-    subtitle
 }) => {
   return (
     <div className="relative w-full h-[500px] md:h-[500px] lg:h-[600px] overflow-hidden">
