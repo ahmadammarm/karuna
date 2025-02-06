@@ -272,7 +272,7 @@ const About = () => {
                 <div className="px-10 md:px-14">
                     <div>
                         <h2
-                            className="text-4xl md:text-5xl font-bold text-center mb-10 text-[#2D3356] relative mt-24 font-poppins"
+                            className="text-4xl md:text-5xl font-bold text-center mb-5 text-[#2D3356] relative mt-24 font-poppins"
                             data-aos="fade-up"
                         >
                             Produk Kami
@@ -280,7 +280,7 @@ const About = () => {
                         <p className="text-center text-lime-900 mb-24 font-poppins font-semibold" data-aos="fade-up">
                             Gimana, penasaran kan sama produk dari Karuna?
                         </p>
-                        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
+                        <div className="relative grid grid-cols-1 mb-10 md:mb-0 md:grid-cols-3 gap-12 px-4">
                             <DecorativeCircles />
                             {[
                                 {
