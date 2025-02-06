@@ -40,7 +40,6 @@ const About = () => {
     const DecorativeCircles = () => {
         return (
             <div className="absolute inset-0 w-full h-full pointer-events-none">
-                {/* Large Circles */}
                 <div
                     className="absolute top-0 right-0 w-96 h-96 rounded-full bg-lime-700/20 transform translate-x-1/4 -translate-y-1/4"
                     data-aos="zoom-out"
@@ -52,7 +51,6 @@ const About = () => {
                     data-aos-delay="100"
                 />
 
-                {/* Medium Circles */}
                 <div
                     className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-lime-700/15"
                     data-aos="zoom-out"
@@ -69,7 +67,6 @@ const About = () => {
                     data-aos-delay="400"
                 />
 
-                {/* Small Circles */}
                 <div
                     className="absolute top-1/3 right-1/3 w-32 h-32 rounded-full bg-lime-500/15"
                     data-aos="zoom-out"
@@ -86,7 +83,6 @@ const About = () => {
                     data-aos-delay="700"
                 />
 
-                {/* Extra Small Circles */}
                 <div
                     className="absolute top-1/4 right-1/4 w-16 h-16 rounded-full bg-lime-500/20"
                     data-aos="zoom-out"
@@ -103,7 +99,6 @@ const About = () => {
                     data-aos-delay="1000"
                 />
 
-                {/* Tiny Circles for Additional Detail */}
                 <div
                     className="absolute top-2/3 left-2/3 w-8 h-8 rounded-full bg-lime-500/15"
                     data-aos="zoom-out"
@@ -120,7 +115,6 @@ const About = () => {
                     data-aos-delay="1300"
                 />
 
-                {/* Background Enhancement Circles */}
                 <div
                     className="absolute top-1/2 left-1/4 w-40 h-40 rounded-full bg-lime-700/10"
                     data-aos="zoom-out"
@@ -196,7 +190,7 @@ const About = () => {
                 </div>
 
                 <div
-                    className="w-full relative bg-cover bg-center bg-no-repeat py-16 md:py-24 px-12 md:px-24 mb-0"
+                    className="w-full relative bg-cover bg-center bg-no-repeat py-16 md:py-24 px-12 md:px-24 mb-0 mt-16"
                     style={{
                         backgroundImage: `url('/aset-home/banner-5.jpg')`,
                         backgroundSize: 'cover',
