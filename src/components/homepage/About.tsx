@@ -190,7 +190,7 @@ const About = () => {
                 </div>
 
                 <div
-                    className="w-full relative bg-cover bg-center bg-no-repeat py-16 md:py-24 px-12 md:px-24 mb-0 mt-10 md:mt-[-100px]"
+                    className="w-full relative bg-cover bg-center bg-no-repeat py-16 md:py-24 px-12 md:px-24 mb-0 mt-10 md:mt-[-60px]"
                     style={{
                         backgroundImage: `url('/aset-home/banner-5.jpg')`,
                         backgroundSize: 'cover',
