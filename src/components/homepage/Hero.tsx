@@ -11,7 +11,7 @@ export const Hero = () => {
 
     const slides = [
         {
-            image: "/aset-home/banner-6.jpg",
+            image: "/aset-home/banner-3.jpg",
             title: "Selamat datang di",
             titleHighlight: "Program Karuna",
             description: "Peningkatan Entrepreneur Skills Berbasis Community-Based Inclusive Development dengan Pemberdayaan Paguyuban Disabilitas",

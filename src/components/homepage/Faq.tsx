@@ -41,19 +41,23 @@ export const Faq = () => {
   ]
 
   return (
-    <section className="w-full pb-20 bg-lime-500">
-      <div className="container mx-auto px-4 md:px-6">
+    <section
+      className="relative bg-[url('/aset-home/hero2.webp')] bg-cover bg-center w-full pb-20"
+    >
+      <div className="absolute inset-0 bg-[#F0FFF0] opacity-90"></div>
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="flex items-center justify-center" data-aos="fade-up">
-            <HelpCircle className="w-12 h-12 text-[#321007] mt-20" />
+            <HelpCircle className="w-12 h-12 text-[#2D3356] mt-20" />
           </div>
-          <h2 className="text-3xl font-bold text-black font-poppins" data-aos="fade-up">
+          <h2 className="text-3xl font-bold text-[#2D3356] font-poppins" data-aos="fade-up">
             Pertanyaan yang Sering Diajukan
           </h2>
-          <p className="text-xl text-lime-950 max-w-2xl font-poppins" data-aos="fade-up">
+          <p className="text-xl text-[#2D3356] max-w-2xl font-poppins" data-aos="fade-up">
             Pertanyaan yang sering ditanyakan oleh pengunjung dan mungkin kamu juga menanyakannya.
           </p>
-          <div className="h-1 w-20 bg-[#321007] rounded-full mt-2" data-aos="fade-up" />
+          <div className="h-1 w-20 bg-white rounded-full mt-2" data-aos="fade-up" />
         </div>
         <div className="mx-auto max-w-3xl mt-12" data-aos="fade-up">
           <Accordion
@@ -70,16 +74,16 @@ export const Faq = () => {
                 className="border border-lime-500 rounded-lg overflow-hidden shadow-sm font-poppins"
               >
                 <AccordionTrigger
-                  className="flex justify-between items-center w-full p-4 text-left text-white bg-[#321007] hover:bg-[#4a1a0a] transition-colors duration-200"
+                  className="flex justify-between items-center w-full p-4 text-left text-white bg-lime-900 hover:bg-lime-800 transition-colors duration-200"
                   onClick={() => setActiveItem(activeItem === `item-${index + 1}` ? undefined : `item-${index + 1}`)}
                 >
-                  <span className="font-semibold text-lg font-popins">{item.question}</span>
+                  <span className="font-semibold text-lg font-poppins">{item.question}</span>
                 </AccordionTrigger>
                 <AnimatePresence>
                   {activeItem === `item-${index + 1}` && (
-                    <AccordionContent className="p-4 bg-[#321007]" forceMount>
+                    <AccordionContent className="p-4 bg-white" forceMount>
                       <div>
-                        <p className="text-white font-poppins">{item.answer}</p>
+                        <p className="text-lime-900 font-poppins">{item.answer}</p>
                       </div>
                     </AccordionContent>
                   )}
@@ -92,4 +96,3 @@ export const Faq = () => {
     </section>
   )
 }
-

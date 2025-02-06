@@ -6,6 +6,8 @@ import { Card, CardContent, CardTitle } from "../ui/card"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Link from 'next/link';
+import { CheckCircle } from 'lucide-react'
+import { Button } from '../ui/button'
 
 const About = () => {
     useEffect(() => {
@@ -35,81 +37,161 @@ const About = () => {
         }
     }, [])
 
+    const DecorativeCircles = () => {
+        return (
+            <div className="absolute inset-0 w-full h-full pointer-events-none">
+                {/* Large Circles */}
+                <div
+                    className="absolute top-0 right-0 w-96 h-96 rounded-full bg-lime-700/20 transform translate-x-1/4 -translate-y-1/4"
+                    data-aos="zoom-out"
+                    data-aos-delay="0"
+                />
+                <div
+                    className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-lime-400/30 transform -translate-x-1/4 translate-y-1/4"
+                    data-aos="zoom-out"
+                    data-aos-delay="100"
+                />
+
+                {/* Medium Circles */}
+                <div
+                    className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-lime-700/15"
+                    data-aos="zoom-out"
+                    data-aos-delay="200"
+                />
+                <div
+                    className="absolute bottom-1/4 right-1/4 w-56 h-56 rounded-full bg-lime-400/25"
+                    data-aos="zoom-out"
+                    data-aos-delay="300"
+                />
+                <div
+                    className="absolute top-3/4 left-1/2 w-48 h-48 rounded-full bg-lime-200/20"
+                    data-aos="zoom-out"
+                    data-aos-delay="400"
+                />
+
+                {/* Small Circles */}
+                <div
+                    className="absolute top-1/3 right-1/3 w-32 h-32 rounded-full bg-lime-500/15"
+                    data-aos="zoom-out"
+                    data-aos-delay="500"
+                />
+                <div
+                    className="absolute bottom-1/2 left-1/3 w-24 h-24 rounded-full bg-lime-200/20"
+                    data-aos="zoom-out"
+                    data-aos-delay="600"
+                />
+                <div
+                    className="absolute top-2/3 right-1/2 w-20 h-20 rounded-full bg-lime-400/25"
+                    data-aos="zoom-out"
+                    data-aos-delay="700"
+                />
+
+                {/* Extra Small Circles */}
+                <div
+                    className="absolute top-1/4 right-1/4 w-16 h-16 rounded-full bg-lime-500/20"
+                    data-aos="zoom-out"
+                    data-aos-delay="800"
+                />
+                <div
+                    className="absolute bottom-1/3 left-1/2 w-12 h-12 rounded-full bg-lime-200/25"
+                    data-aos="zoom-out"
+                    data-aos-delay="900"
+                />
+                <div
+                    className="absolute top-1/2 right-2/3 w-10 h-10 rounded-full bg-lime-400/20"
+                    data-aos="zoom-out"
+                    data-aos-delay="1000"
+                />
+
+                {/* Tiny Circles for Additional Detail */}
+                <div
+                    className="absolute top-2/3 left-2/3 w-8 h-8 rounded-full bg-lime-500/15"
+                    data-aos="zoom-out"
+                    data-aos-delay="1100"
+                />
+                <div
+                    className="absolute bottom-2/3 right-1/3 w-6 h-6 rounded-full bg-lime-200/20"
+                    data-aos="zoom-out"
+                    data-aos-delay="1200"
+                />
+                <div
+                    className="absolute top-3/4 right-3/4 w-4 h-4 rounded-full bg-lime-400/25"
+                    data-aos="zoom-out"
+                    data-aos-delay="1300"
+                />
+
+                {/* Background Enhancement Circles */}
+                <div
+                    className="absolute top-1/2 left-1/4 w-40 h-40 rounded-full bg-lime-700/10"
+                    data-aos="zoom-out"
+                    data-aos-delay="1400"
+                />
+                <div
+                    className="absolute bottom-1/4 right-2/3 w-36 h-36 rounded-full bg-lime-400/15"
+                    data-aos="zoom-out"
+                    data-aos-delay="1500"
+                />
+                <div
+                    className="absolute top-3/4 right-1/3 w-28 h-28 rounded-full bg-lime-300/10"
+                    data-aos="zoom-out"
+                    data-aos-delay="1600"
+                />
+            </div>
+        );
+    };
+
     return (
-        <div className="overflow-hidden bg-lime-500">
+        <div className="overflow-hidden bg-[#F0FFF0]">
             <div className="py-16 md:py-24 md:mt-0">
                 <h1
-                    className="text-black text-4xl md:text-5xl font-bold text-center mb-16 relative mt-32 md:mt-0 font-poppins"
+                    className="text-[#2D3356] text-4xl md:text-5xl mb-16 font-bold text-center relative mt-32 md:mt-0 font-poppins"
                     data-aos="fade-up"
                     data-aos-duration="800"
                 >
                     Tentang Kami
                 </h1>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24 px-4">
-                    <div
-                        className="flex items-center justify-center"
-                        data-aos="fade-right"
-                        data-aos-duration="1000"
-                    >
-                        <div className="bg-[#1b0000] rounded-3xl p-8 md:p-12 shadow-lg relative overflow-hidden">
-                            {/* <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative text-black font-serif">
-                                Seputar
-                                <br />
-                                <span className="text-lime-900 relative font-serif">
-                                    Karuna
-                                </span>
-                            </h2> */}
-                            <p className="text-white mb-8 text-lg relative z-10 font-poppins">
-                                Hai Karuners! Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh!
-                            </p>
-                            <div
-                                className="flex justify-center relative z-10"
-                                data-aos="zoom-in"
-                                data-aos-delay="200"
-                            >
+                <div className="relative min-h-screen bg-[#F0FFF0] p-8">
+                    <DecorativeCircles />
+                    <div className="max-w-7xl mx-auto relative z-10">
+                        <div className="grid lg:grid-cols-2 items-center lg:gap-4">
+                            {/* Image Section */}
+                            <div className="relative rounded-3xl overflow-hidden lg:pr-8" data-aos="fade-right">
                                 <Image
                                     src="/aset-home/about.png"
-                                    alt="Program Karuna Illustration"
+                                    alt="Children learning"
                                     width={300}
                                     height={100}
-                                    className="object-cover"
-                                    loading="lazy"
+                                    className="w-96 h-auto object-cover lg:ml-20"
                                 />
                             </div>
+
+                            {/* Content Section */}
+                            <div className="space-y-6 lg:-ml-4" data-aos="fade-left">
+                                <h1 className="text-[#2D3356] text-3xl lg:text-4xl font-bold leading-tight mt-10 md:mt-0 font-poppins">
+                                    Hai Karuners!
+                                </h1>
+
+                                <p className="text-gray-600 font-poppins">
+                                    Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh!
+                                </p>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <FeatureItem text="Edugu Pick" />
+                                    <FeatureItem text="Animal Explore" />
+                                    <FeatureItem text="Edu Product" variant="lime" />
+                                    <FeatureItem text="Tour Guide" variant="lime" />
+                                </div>
+
+                                <div className="mt-24">
+                                    <Link href="about" >
+                                        <Button className="bg-lime-500 hover:bg-lime-600 text-white px-8 py-6 rounded-full text-lg font-popins">
+                                            Selengkapnya
+                                        </Button>
+                                    </Link>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        className="flex flex-col justify-center space-y-6"
-                        data-aos="fade-left"
-                        data-aos-duration="1000"
-                    >
-                        <h3 className="text-2xl md:text-3xl font-black text-[#1b0000] font-poppins">
-                            Menarik banget kan??
-                        </h3>
-                        <p className="text-black text-lg leading-relaxed font-poppins">
-                             Apalagi program karuna ini dilaksanakan di Paguyuban Amanah Bersama yang berada di Desa Gunungronggo. Bukan cuma pelatihan ajaa, serunya lagii, hasil dari pelatihan ini nggak sekadar berhenti di teori aja, tapi langsung dipraktikkan!
-                        </p>
-                        <p className="text-black text-lg leading-relaxed font-poppins">
-                            Dari produk-produk handmade yang unik sampai inovasi berbasis keberlanjutan, semuanya dibuat dengan penuh cinta dan semangat.
-                        </p>
-                        <div
-                            className="flex items-center space-x-4 mt-4 bg-[#1b0000] rounded-lg"
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                        >
-                            <Image src="/aset-home/2.png" alt="masyarakat" width={180} height={40} />
-                            <span className="text-white font-semibold text-xl text-center font-poppins">Pemberdayaan Masyarakat</span>
-                        </div>
-                        <div
-                            className="flex items-center space-x-4 bg-[#1b0000] rounded-lg"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                        >
-                            <Image src="/aset-home/3.png" alt="produk" width={180} height={40} />
-                            <span className="text-white font-semibold text-xl text-center font-poppins">Inovasi Produk Lokal</span>
-                        </div>
-                        {/* <Separator className="my-12 md:my-0" /> */}
                     </div>
                 </div>
 
@@ -193,18 +275,19 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-lime-500 py-16 md:py-24 px-10 md:px-14">
+                <div className="px-10 md:px-14">
                     <div>
                         <h2
-                            className="text-4xl md:text-5xl font-bold text-center mb-16 text-black relative mt-10 font-poppins"
+                            className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#2D3356] relative mt-24 font-poppins"
                             data-aos="fade-up"
                         >
                             Produk Kami
                         </h2>
-                        <p className="text-center text-[#1b0000] mt-5 mb-16 font-poppins font-semibold" data-aos="fade-up">
+                        <p className="text-center text-lime-900 mt-5 mb-16 font-poppins font-semibold" data-aos="fade-up">
                             Gimana, penasaran kan sama produk dari Karuna?
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
+                        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
+                            <DecorativeCircles />
                             {[
                                 {
                                     nama: "Edu Product",
@@ -226,7 +309,7 @@ const About = () => {
                                 },
                             ].map((item, index) => (
                                 <Card key={index}
-                                    className="relative flex flex-col items-center pt-16 bg-[#1b0000] border-none mb-10 mt-10"
+                                    className="relative flex flex-col items-center pt-16 bg-lime-900 border-none mt-10 shadow-lg"
                                     data-aos="fade-up"
                                     data-aos-delay={index * 150}
                                     data-aos-anchor-placement="top-bottom"
@@ -241,7 +324,7 @@ const About = () => {
                                         />
                                     </div>
                                     <div className="mt-16 text-center mb-10 px-4">
-                                        <h3 className="text-2xl font-bold text-lime-500 font-poppins">
+                                        <h3 className="text-2xl font-bold text-lime-300 font-poppins">
                                             {item.nama}
                                         </h3>
                                         <p className="text-white mt-4 mb-8 font-poppins">
@@ -249,7 +332,7 @@ const About = () => {
                                         </p>
                                         <Link
                                             href={item.href}
-                                            className="text-lg font-bold px-4 py-2 rounded-lg bg-lime-700 text-white hover:opacity-75 transition-all ease-in-out duration-200 font-poppins"
+                                            className="text-lg font-bold px-4 py-2 rounded-lg bg-lime-600 text-white hover:bg-lime-700 transition-all ease-in-out duration-200 font-poppins"
                                         >
                                             Jelajahi
                                         </Link>
@@ -259,9 +342,19 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     )
 }
 
 export default About
+
+function FeatureItem({ text, variant = "blue" }: { text: string; variant?: "blue" | "lime" }) {
+    return (
+        <div className="flex items-center gap-2">
+            <CheckCircle className={`w-5 h-5 ${variant === "lime" ? "text-lime-500" : "text-[#2D3356]"}`} />
+            <span className="text-gray-700">{text}</span>
+        </div>
+    )
+}
