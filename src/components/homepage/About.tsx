@@ -144,7 +144,7 @@ const About = () => {
                 >
                     Tentang Kami
                 </h1>
-                <div className="relative min-h-screen bg-[#F0FFF0] p-8">
+                <div className="relative min-h-screen bg-[#F0FFF0] pb-4 px-8">
                     <DecorativeCircles />
                     <div className="max-w-7xl mx-auto relative z-10">
                         <div className="grid lg:grid-cols-2 items-center lg:gap-4">
@@ -160,23 +160,23 @@ const About = () => {
                             </div>
 
                             {/* Content Section */}
-                            <div className="space-y-6 lg:-ml-4" data-aos="fade-left">
-                                <h1 className="text-[#2D3356] text-3xl lg:text-4xl font-bold leading-tight mt-10 md:mt-0 font-poppins">
+                            <div className="lg:-ml-4" data-aos="fade-left">
+                                <h1 className="text-[#2D3356] text-3xl lg:text-4xl font-bold leading-tight mt-10 md:mt-0 mb-5 md:mb-10 font-poppins">
                                     Hai Karuners!
                                 </h1>
 
-                                <p className="text-gray-600 font-poppins">
+                                <p className="text-gray-600 font-poppins mb-5 md:mb-10">
                                     Ada yang tau nggak sih apa itu program Karuna? Yupps betull, Karuna bukan hanya sekedar program, tapi gebrakan! Karuna hadir untuk menciptakan dampak nyata dengan memberdayakan temen-temen difabel melalui pelatihan enterpreneurship loh!
                                 </p>
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <FeatureItem text="Edugu Pick" />
                                     <FeatureItem text="Animal Explore" />
-                                    <FeatureItem text="Edu Product" variant="lime" />
-                                    <FeatureItem text="Tour Guide" variant="lime" />
+                                    <FeatureItem text="Edu Product" />
+                                    <FeatureItem text="Tour Guide" />
                                 </div>
 
-                                <div className="mt-24">
+                                <div className="mt-16">
                                     <Link href="about" >
                                         <Button className="bg-lime-500 hover:bg-lime-600 text-white px-8 py-6 rounded-full text-lg font-popins">
                                             Selengkapnya
@@ -190,7 +190,7 @@ const About = () => {
                 </div>
 
                 <div
-                    className="w-full relative bg-cover bg-center bg-no-repeat py-16 md:py-24 px-12 md:px-24 mb-0 mt-16"
+                    className="w-full relative bg-cover bg-center bg-no-repeat py-16 md:py-24 px-12 md:px-24 mb-0 mt-10 md:mt-[-100px]"
                     style={{
                         backgroundImage: `url('/aset-home/banner-5.jpg')`,
                         backgroundSize: 'cover',
@@ -200,7 +200,7 @@ const About = () => {
                     <div className="absolute inset-0 bg-black bg-opacity-70"></div>
                     <div className="relative z-10">
                         <h2
-                            className="text-4xl md:text-5xl text-center text-white relative mt-10 font-poppins font-bold mb-10"
+                            className="text-4xl md:text-5xl text-center text-white relative mt-10 font-poppins font-bold mb-24"
                             data-aos="fade-up"
                         >
                             Galeri
@@ -272,12 +272,12 @@ const About = () => {
                 <div className="px-10 md:px-14">
                     <div>
                         <h2
-                            className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#2D3356] relative mt-24 font-poppins"
+                            className="text-4xl md:text-5xl font-bold text-center mb-10 text-[#2D3356] relative mt-24 font-poppins"
                             data-aos="fade-up"
                         >
                             Produk Kami
                         </h2>
-                        <p className="text-center text-lime-900 mt-5 mb-16 font-poppins font-semibold" data-aos="fade-up">
+                        <p className="text-center text-lime-900 mb-24 font-poppins font-semibold" data-aos="fade-up">
                             Gimana, penasaran kan sama produk dari Karuna?
                         </p>
                         <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
@@ -348,7 +348,7 @@ function FeatureItem({ text, variant = "blue" }: { text: string; variant?: "blue
     return (
         <div className="flex items-center gap-2">
             <CheckCircle className={`w-5 h-5 ${variant === "lime" ? "text-lime-500" : "text-[#2D3356]"}`} />
-            <span className="text-gray-700">{text}</span>
+            <span className="text-gray-700 font-poppins font-semibold">{text}</span>
         </div>
     )
 }

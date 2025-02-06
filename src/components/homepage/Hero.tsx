@@ -61,9 +61,8 @@ export const Hero = () => {
             {slides.map((slide, index) => (
                 <div
                     key={index}
-                    className={`absolute w-full min-h-screen transition-opacity duration-500 ${
-                        currentSlide === index ? "opacity-100" : "opacity-0 pointer-events-none"
-                    }`}
+                    className={`absolute w-full min-h-screen transition-opacity duration-500 ${currentSlide === index ? "opacity-100" : "opacity-0 pointer-events-none"
+                        }`}
                 >
                     <div
                         className="w-full min-h-screen flex items-center pt-12 bg-cover bg-center relative py-14"
@@ -73,7 +72,7 @@ export const Hero = () => {
                             backgroundAttachment: 'fixed'
                         }}
                     >
-                        <div className="absolute inset-0 bg-black opacity-70"></div>
+                        <div className="absolute inset-0 bg-black opacity-80"></div>
 
                         <div className="container mx-auto relative z-10">
                             <div className="grid lg:grid-cols-2 gap-12 items-center md:gap-8">
@@ -82,13 +81,16 @@ export const Hero = () => {
                                         className="w-[20rem] lg:w-[70%] rounded-[100%] transition-transform duration-500 hover:scale-105"
                                         src={slide.imageUrl}
                                         alt=""
-                                        loading="lazy"                                    />
+                                        loading="lazy" />
                                 </div>
                                 <div className="text-center lg:text-left space-y-4 pl-0 md:pl-8 order-2 md:order-1">
                                     <h1
-                                    className="text-white text-4xl lg:text-5xl font-bold cursor-default mt-14 mb-10 px-3 font-poppins"
+                                        className="text-white text-4xl lg:text-5xl font-bold cursor-default mt-14 mb-10 px-3 font-poppins"
                                     >
-                                        {slide.title} <span className="text-lime-600 font-poppins">{slide.titleHighlight}</span>
+                                        {slide.title} <span className="bg-gradient-to-r from-lime-300 to-lime-500 bg-clip-text text-transparent font-poppins">
+                                            {slide.titleHighlight}
+                                        </span>
+
                                     </h1>
                                     <p className="text-white text-lg lg:text-xl leading-relaxed font-medium cursor-default px-3 font-poppins">
                                         {slide.description}
