@@ -11,22 +11,32 @@ const navItems = [
   { href: "/", label: "Beranda" },
   {
     href: "#",
-    label: "Eco-Eduwisata",
+    label: "Program",
     dropdown: [
-      { href: "/edugo-pick", label: "Edugu Pick" },
+      { href: "/edugu-pick", label: "Edugu Pick" },
       { href: "/animal-explore", label: "Animal Explore" },
+      { href: "/edu-product", label: "Edu Product" },
+      { href: "/tour-guide", label: "Tour Guide" },
     ],
   },
-  { href: "/eco-product", label: "Eco-Product" },
+//   { href: "/eco-product", label: "Eco-Product" },
+//   {
+//     href: "#",
+//     label: "Tour Guide",
+//     dropdown: [
+//       { href: "/pengembang", label: "Tim Pengembang" },
+//       { href: "/wisata-petik-jambu-firdaus", label: "Wisata Petik Jambu Firdaus" },
+//     ],
+//   },
+  { href: "/faqs", label: "FAQs" },
   {
     href: "#",
-    label: "Tour Guide",
+    label: "Informasi",
     dropdown: [
+      { href: "/tentang-kami", label: "Tentang Kami" },
       { href: "/pengembang", label: "Tim Pengembang" },
-      { href: "/wisata-petik-jambu-firdaus", label: "Wisata Petik Jambu Firdaus" },
     ],
   },
-  { href: "/faqs", label: "FAQs" },
 ]
 
 export default function Navbar() {
@@ -61,7 +71,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-14">
             {navItems.map((item) => (
               <div key={item.href} className="relative group">
                 {item.dropdown ? (
