@@ -6,7 +6,7 @@ import { Card, CardContent, CardTitle } from "../ui/card"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Link from 'next/link';
-import { CheckCircle, Eye, MapPin } from 'lucide-react'
+import { CheckCircle, Eye } from 'lucide-react'
 import { Button } from '../ui/button'
 import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog'
 
