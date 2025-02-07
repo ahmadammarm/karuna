@@ -49,12 +49,12 @@ export const Faq = () => {
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="flex items-center justify-center" data-aos="fade-up">
-                        <HelpCircle className="w-12 h-12 text-[#2D3356] mt-20" />
+                        <HelpCircle className="w-12 h-12 text-[#1c3621] mt-20" />
                     </div>
-                    <h2 className="text-3xl font-bold text-[#2D3356] font-poppins" data-aos="fade-up">
+                    <h2 className="text-3xl font-bold text-[#1c3621] font-poppins" data-aos="fade-up">
                         Pertanyaan yang Sering Diajukan
                     </h2>
-                    <p className="text-xl text-[#2D3356] max-w-2xl font-poppins" data-aos="fade-up">
+                    <p className="text-xl text-[#1c3621] max-w-2xl font-poppins" data-aos="fade-up">
                         Pertanyaan yang sering ditanyakan oleh pengunjung dan mungkin kamu juga menanyakannya.
                     </p>
                     <div className="h-1 w-20 bg-white rounded-full mt-2" data-aos="fade-up" />
