@@ -412,12 +412,12 @@ const About = () => {
                                         />
                                     </div>
                                     <div className="p-6">
-                                        <div className="flex items-center gap-2 text-lime-700 mb-3">
+                                        {/* <div className="flex items-center gap-2 text-lime-700 mb-3">
                                             <MapPin className="w-4 h-4" />
-                                            <span className="text-sm">{item.lokasi}</span>
-                                        </div>
-                                        <h3 className="text-2xl font-bold text-lime-900 mb-2">{item.nama}</h3>
-                                        <p className="text-lime-700">{item.deskripsi}</p>
+                                            <span className="text-sm font-poppins">{item.lokasi}</span>
+                                        </div> */}
+                                        <h3 className="text-2xl font-bold text-lime-900 mb-6 font-poppins w-[50%] py-2 text-center rounded-lg bg-lime-400">{item.nama}</h3>
+                                        <p className="text-lime-700 font-poppins">{item.deskripsi}</p>
                                     </div>
                                 </div>
                             ))}
