@@ -171,7 +171,7 @@ const About = () => {
                             {[
                                 {
                                     title: "Pemberdayaan Paguyuban",
-                                    imageUrl: "/aset-home/banner-1.jpeg",
+                                    imageUrl: "/aset-home/banner-3.jpg",
                                     description:
                                         "Mengembangkan desain Karuna sebagai program pemberdayaan pada Paguyuban Amanah Bersama di Desa Gunungronggo, Kabupaten Malang.",
                                 },
@@ -354,7 +354,7 @@ const About = () => {
                                                 Lihat Detail
                                             </button>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </Card>
                             ))}
                         </div>
