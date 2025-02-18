@@ -170,22 +170,22 @@ const About = () => {
                         <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-3">
                             {[
                                 {
-                                    title: "Pemberdayaan Paguyuban",
-                                    imageUrl: "/aset-home/banner-3.jpg",
+                                    title: "Peningkatan Enterpreneur Skills",
+                                    imageUrl: "/aset-home/banner-6-copy.jpg",
                                     description:
-                                        "Mengembangkan desain Karuna sebagai program pemberdayaan pada Paguyuban Amanah Bersama di Desa Gunungronggo, Kabupaten Malang.",
+                                        "Membantu mitra memperoleh enterpreneur skills berbasis Community-Based Inclusive Development untuk menciptakan kemadirian ekonomi.",
                                 },
                                 {
-                                    title: "Peningkatan Enterpreneur Skills",
+                                    title: "Program Pelatihan Karuna",
                                     imageUrl: "/aset-home/banner-2.png",
                                     description:
-                                        "Menyusun langkah strategis program Karuna untuk meningkatkan enterpreneur skills berbasis Community-Based Inclusive Development pada Paguyuban Amanah Bersama di Desa Gunungronggo, Kabupaten Malang.",
+                                        "Menyediakan alternatif program pelatihan Karuna berbasis Community-Based Inclusive yang efektif untuk untuk Paguyuban Amanah Bersama di Desa Gunungronggo. ",
                                 },
                                 {
-                                    title: "Meningkatkan Kemandirian Ekonomi",
+                                    title: "Pengoptimalan Potensi Kelompok Usaha",
                                     imageUrl: "/aset-home/banner-3.jpg",
                                     description:
-                                        "Mengetahui efektivitas Program Karuna dalam meningkatkan kemandirian ekonomi anggota Paguyuban Amanah Bersama di Desa Gunungronggo, Kabupaten Malang.",
+                                        "Membantu Paguyuban Amanah Bersama dalam mengoptimalkan potensi kelompok usaha dengan memanfaatkan hasil potensi alam di Desa Gunungronggo, Kabupaten Malang.  ",
                                 },
                             ].map((item, index) => (
                                 <div
