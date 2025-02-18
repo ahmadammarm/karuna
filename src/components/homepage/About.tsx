@@ -78,7 +78,7 @@ const About = () => {
     const products = [
         {
             nama: "Tas Eco-Print",
-            deskripsi: "Produk fashion yang terbuat dari bahan daur ulang.",
+            deskripsi: "Produk fashion yang dibuat dari olahan daun jambu.",
             imageUrl: "/aset-home/10.png",
             harga: "Rp 20.000",
             tersedia: "Paguyuban Amanah Bersama",
