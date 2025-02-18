@@ -13,11 +13,11 @@ const navItems = [
         href: "#",
         label: "Program",
         dropdown: [
-            { href: "/anjang-karuna", label: "Anjang Karya Karuna" },
-            { href: "/gema-karuna", label: "Gema Karuna" },
-            { href: "/sanggar-karuna", label: "Sanggar Karuna" },
-            { href: "/kreasi-karuna", label: "Kreasi Karuna" },
-            { href: "/niaga-karuna", label: "Niaga Karuna" },
+            { href: "#", label: "Anjang Karya Karuna" },
+            { href: "#", label: "Gema Karuna" },
+            { href: "#", label: "Sanggar Karuna" },
+            { href: "#", label: "Kreasi Karuna" },
+            { href: "#", label: "Niaga Karuna" },
         ],
     },
     //   { href: "/eco-product", label: "Eco-Product" },
@@ -151,8 +151,8 @@ export default function Navbar() {
                                                     <Link
                                                         href={item.href}
                                                         className={`${pathname === item.href
-                                                                ? "text-lime-700"
-                                                                : "text-gray-700 hover:text-lime-700 hover:bg-gray-50"
+                                                            ? "text-lime-700"
+                                                            : "text-gray-700 hover:text-lime-700 hover:bg-gray-50"
                                                             } block px-3 py-2 rounded-md text-lg font-semibold font-poppins`}
                                                         onClick={() => setIsOpen(false)}
                                                     >

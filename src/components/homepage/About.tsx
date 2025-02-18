@@ -44,13 +44,13 @@ const About = () => {
             nama: "Anjang Karya Karuna",
             deskripsi: "Tim Karuna keliling ke Paguyuban Amanah Bersama, komunitas disabilitas, dan kepala desa buat sharing bareng. Kita ngobrolin banyak hal seru dan saling berbagi pengalaman. Penasaran? Klik di sini!",
             imageUrl: "/aset-home/15.png",
-            href: "/anjang-karuna",
+            href: "#",
         },
         {
             nama: "Gema Karuna",
             deskripsi: "Kenalan lebih dalam sama Karuna! Di sini, kita bakal ngobrol bareng tentang program-program kece dari Karuna. Jangan sampai ketinggalan!",
             imageUrl: "/aset-home/16.png",
-            href: "/gema-karuna",
+            href: "#",
         },
     ];
 
@@ -59,19 +59,19 @@ const About = () => {
             nama: "Sanggar Karuna",
             deskripsi: "Belajar sambil praktek di Sanggar Karuna! Ada Pelatihan Keripik Jambu Merah, Eco-Print kece buat fashion unik, sampai bikin Selai Jambu Merah yang yummy banget! Cek selengkapnya disini yaa!",
             imageUrl: "/aset-home/17.png",
-            href: "/sanggar-karuna",
+            href: "#",
         },
         {
             nama: "Kreasi Karuna",
             deskripsi: "Produk keren harus punya packaging kece! Di Kreasi Karuna, kamu bakal belajar cara bikin kemasan produk yang bikin pelanggan auto tertarik. Yuk, pelajari teknik packaging keren di sini!",
             imageUrl: "/aset-home/18.png",
-            href: "/kreasi-karuna",
+            href: "#",
         },
         {
             nama: "Niaga Karuna",
             deskripsi: "Biar bisnis makin cuan, digital marketing wajib dikuasai! Di Niaga Karuna, kita bakal kupas tuntas strategi marketing digital biar produkmu makin dikenal. Penasaran kan? Langsung aja kepoin di sini!",
             imageUrl: "/aset-home/19.png",
-            href: "/niaga-karuna",
+            href: "#",
         },
     ];
 
