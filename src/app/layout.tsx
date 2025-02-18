@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from 'next/font/google'
+import { Fredoka, Poppins } from 'next/font/google'
 import Navbar from "@/components/layout/Navbar";
 
 const poppins = Poppins({
@@ -8,6 +8,13 @@ const poppins = Poppins({
     variable: '--font-poppins',
     display: 'swap',
     weight: ['400', '500', '600', '700', '800', '900'],
+})
+
+const fredoka = Fredoka({
+    subsets: ['latin'],
+    variable: '--font-fredoka',
+    display: 'swap',
+    weight: ['400', '500', '600', '700'],
 })
 
 
@@ -25,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${poppins.variable} antialiased font-sans`}
+        className={`${poppins.variable} ${poppins.variable} ${fredoka.variable} ${fredoka.variable} antialiased font-sans`}
       >
         <Navbar />
         {children}

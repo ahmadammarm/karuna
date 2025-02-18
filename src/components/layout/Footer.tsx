@@ -22,7 +22,7 @@ export const Footer = () => {
                             </div>
                         </div>
                         <p className="text-gray-300 mt-4 max-w-md font-poppins">
-                            Program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Amanah Bersama dalam mengoptimalkan potensi Perkebunan Jambu di Dusun Gunungronggo.
+                            Program pengabdian yang berfokus pada pelatihan entrepreneur skills untuk Paguyubuan Amanah Bersama dalam mengoptimalkan potensi hasil alam berupa buah Jambu di Dusun Gunungronggo.
                         </p>
                         <div className="flex gap-4 mt-6">
                             <Link href="https://facebook.com" className="hover:text-lime-500 transition-colors">
@@ -36,6 +36,9 @@ export const Footer = () => {
                             </Link>
                         </div>
                     </div>
+
+
+
 
                     {/* Halaman Section */}
                     <div className="space-y-4">

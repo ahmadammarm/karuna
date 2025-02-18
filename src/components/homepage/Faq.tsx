@@ -42,7 +42,7 @@ export const Faq = () => {
 
     return (
         <section
-            className="relative bg-[url('/aset-home/hero2.webp')] bg-cover bg-center bg-fixed w-full pb-20"
+            className="relative bg-[url('/aset-home/banner-5.jpg')] bg-cover bg-center bg-fixed w-full pb-20"
         >
             <div className="absolute inset-0 bg-[#F0FFF0] opacity-90"></div>
 

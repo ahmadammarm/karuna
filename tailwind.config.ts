@@ -53,6 +53,7 @@ const config: Config = {
   		},
           fontFamily: {
             poppins: ['var(--font-poppins)', 'sans-serif'],
+            fredoka: ['var(--font-fredoka)', 'sans-serif']
           },
   		borderRadius: {
   			lg: 'var(--radius)',

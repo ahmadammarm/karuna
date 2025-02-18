@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 import Image from "next/image"
 import { Card } from "../ui/card"
-// import { Separator } from '../ui/separator'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion'
@@ -67,7 +66,6 @@ const About = () => {
         <div className="overflow-hidden bg-lime-500">
             <div className="py-16 md:py-20 md:mt-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-24 px-4">
-                    {/* Gambar - Order 2 di mobile, Order 1 di desktop */}
                     <div
                         className="flex items-center justify-center order-2 md:order-1"
                         data-aos="fade-right"
@@ -76,7 +74,6 @@ const About = () => {
                         <Image src={'/aset-home/14.png'} width={200} height={500} alt="" />
                     </div>
 
-                    {/* Accordion - Order 1 di mobile, Order 2 di desktop */}
                     <div
                         className="flex flex-col justify-center space-y-6 order-1 md:order-2"
                         data-aos="fade-left"
