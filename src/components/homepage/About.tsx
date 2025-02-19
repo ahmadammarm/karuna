@@ -171,7 +171,7 @@ const About = () => {
                             {[
                                 {
                                     title: "Peningkatan Enterpreneur Skills",
-                                    imageUrl: "/aset-home/banner-6-copy.jpg",
+                                    imageUrl: "/aset-home/gambar-paguyuban.png",
                                     description:
                                         "Membantu mitra memperoleh enterpreneur skills berbasis Community-Based Inclusive Development untuk menciptakan kemadirian ekonomi.",
                                 },
