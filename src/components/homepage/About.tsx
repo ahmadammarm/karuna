@@ -361,6 +361,23 @@ const About = () => {
 
                     </div>
                 </div>
+                {/* Maps */}
+                <div className="relative bg-[#F0FFF0] px-10 md:px-14 py-20">
+                    <h2
+                        className="text-4xl md:text-5xl font-bold text-center text-[#1c3621] relative mt-5 mb-10 font-fredoka"
+                        data-aos="fade-up"
+                    >
+                        Kunjungi Kami
+                    </h2>
+                    <div className="relative w-full h-96">
+                        <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.507420955202!2d112.70717719999999!3d-8.0496091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd627005d181211%3A0x48323e0f76be6bc3!2sPaguyuban%20Orang%20Tua%20Penyandang%20Disabilitas%20Amanah%20Bersama!5e0!3m2!1sen!2sid!4v1738504714027!5m2!1sen!2sid"
+                            allowFullScreen
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     )

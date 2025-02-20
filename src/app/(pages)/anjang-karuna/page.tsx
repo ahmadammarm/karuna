@@ -31,13 +31,13 @@ export default function AnimalExplorePage() {
 
   return (
     <>
-    <Banner title="Animal Explore" imageUrl="/aset-home/banner-4.jpg" href="/" link="Beranda" subtitle="Animal Explore" />
+    <Banner title="Animal Explore" imageUrl="/aset-home/banner-4.jpg" href="/" link="Beranda" subtitle="Anjang Karuna" />
     <div className="container mx-auto px-4 py-8">
       <h1
         className="text-4xl font-bold text-center mb-8 mt-20"
         data-aos="fade-up"
       >
-        Selamat Datang di Animal Explore
+        Selamat Datang di Program Anjang Karuna
       </h1>
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">

@@ -11,13 +11,13 @@ const navItems = [
     { href: "/", label: "Beranda" },
     {
         href: "#",
-        label: "Program",
+        label: "Eco-Eduwisata",
         dropdown: [
-            { href: "#", label: "Anjang Karya Karuna" },
-            { href: "#", label: "Gema Karuna" },
-            { href: "#", label: "Sanggar Karuna" },
-            { href: "#", label: "Kreasi Karuna" },
-            { href: "#", label: "Niaga Karuna" },
+            { href: "/anjang-karuna", label: "Anjang Karya Karuna" },
+            { href: "/gema-karuna", label: "Gema Karuna" },
+            { href: "/sanggar-karuna", label: "Sanggar Karuna" },
+            { href: "/kreasi-karuna", label: "Kreasi Karuna" },
+            { href: "/niaga-karuna", label: "Niaga Karuna" },
         ],
     },
     //   { href: "/eco-product", label: "Eco-Product" },
@@ -30,7 +30,13 @@ const navItems = [
     //     ],
     //   },
     { href: "/faqs", label: "FAQs" },
-    { href: "/pengembang", label: "Tim" },
+    {
+        href: "#",
+        label: "Tour Guide",
+        dropdown: [
+            { href: "/pengembang", label: "Tim Pengembang" },
+        ],
+    },
     // {
     //     href: "#",
     //     label: "Informasi",
