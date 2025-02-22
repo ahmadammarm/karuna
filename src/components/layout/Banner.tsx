@@ -11,6 +11,7 @@ interface BannerProps {
 const Banner: React.FC<BannerProps> = ({
     title,
     imageUrl,
+    subtitle
 }) => {
   return (
     <div className="relative w-full h-[500px] md:h-[500px] lg:h-[600px] overflow-hidden">
@@ -22,6 +23,9 @@ const Banner: React.FC<BannerProps> = ({
                 <h2 className="text-4xl md:text-5xl font-black mb-4 font-poppins text-white">
                     {title}
                 </h2>
+                <p className="text-lg md:text-xl font-light mb-8 font-poppins text-white">
+                    {subtitle}
+                </p>
             </div>
         </div>
     </div>

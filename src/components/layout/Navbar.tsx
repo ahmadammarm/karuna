@@ -29,7 +29,7 @@ const navItems = [
     //       { href: "/wisata-petik-jambu-firdaus", label: "Wisata Petik Jambu Firdaus" },
     //     ],
     //   },
-    { href: "/faqs", label: "FAQs" },
+    { href: "/eco-product", label: "Eco-Product" },
     {
         href: "#",
         label: "Tour Guide",
@@ -37,6 +37,7 @@ const navItems = [
             { href: "/pengembang", label: "Tim Pengembang" },
         ],
     },
+    { href: "/faqs", label: "FAQs" },
     // {
     //     href: "#",
     //     label: "Informasi",
