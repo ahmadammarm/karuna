@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Footer } from "@/components/layout/Footer"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Calendar, Camera, Target, Users } from "lucide-react"
+import { Calendar, Target } from "lucide-react"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import DecorativeCircle from "@/components/layout/DecorativeCircle"
